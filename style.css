@@ -157,7 +157,10 @@
   .topic-btn {
       background: #9c27b0;
       color: white;
-      padding: 12px 20px;
+      width: 250px;
+      height: 100px;
+      font-size: 20px;
+      margin: 20px;
       border-radius: 8px;
       cursor: pointer;
       border: none;
@@ -167,7 +170,7 @@
   .modal {
       display: none;
       position: fixed;
-      z-index: 1000;
+      z-index: 1050;
       left: 0;
       top: 0;
       width: 100%;
@@ -185,6 +188,11 @@
       width: 90%;
       text-align: left;
       position: relative;
+  }
+
+
+  .modal-backdrop {
+      z-index: 1040 !important;
   }
 
   .close {
