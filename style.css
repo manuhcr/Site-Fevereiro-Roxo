@@ -1,205 +1,297 @@
-  body {
-      font-family: 'Outfit', sans-serif;
-      margin: 0;
-      background: #f7ebff;
-      color: #333;
-      cursor: default !important;
-      user-select: none;
-      /* impede seleção de texto ao clicar */
-  }
+body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    background: #f7ebff;
+    color: #333;
+    cursor: default !important;
+    user-select: none;
+    max-width: none;
+    /* <<< garante largura total */
+}
 
-  .navbar {
-      background: #9A12AF !important;
-      color: white;
-      padding: 15px;
-      text-align: center;
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #9A12AF !important;
+    position: fixed;
+    width: 100%;
+    color: white;
+    margin-top: -40px !important;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  }
+.navintro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-  .navintro {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-  }
+.navbar-brand,
+.navbar-brand:link,
+.navbar-brand:visited {
+    color: #FDE9FF !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
 
-  .navbar-brand,
-  .navbar-brand:link,
-  .navbar-brand:visited {
-      color: #FDE9FF !important;
-      text-decoration: none !important;
-      cursor: pointer !important;
-      /* mãozinha */
-  }
+.navbar-brand:hover {
+    color: #fff0ff !important;
+}
 
-  .navbar-brand:hover {
-      color: #fff0ff !important;
-      /* pode clarear só um pouco no hover */
-  }
+.navbar-brand {
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'Sacramento', cursive;
+}
 
+.navbar-nav {
+    display: flex;
+    gap: 6px;
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: 100px;
+}
 
-  .navbar-brand {
-      color: #FDE9FF;
-      font-size: 2em;
-      font-weight: 400;
-      font-family: 'Sacramento', cursive;
-  }
+.navbar-nav a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
 
-  .navbar-nav {
-      display: flex;
-      gap: 6px;
-      font-size: 1.1em;
-      color: white !important;
-      margin-left: auto;
-      margin-right: 100px;
-  }
+.navbar-nav a:hover {
+    color: #f3c9f8 !important;
+}
 
-  .navbar-nav a:hover {
-      color: #f3c9f8 !important;
-  }
+.logo {
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 100px;
+    vertical-align: middle;
+}
 
-  .navbar-nav a {
-      color: #ffffff !important;
-  }
+/* ===== INTRO SEÇÃO ===== */
+section {
+    padding: 140px 50px;
+    text-align: center;
+}
 
-  .logo {
-      height: 40px;
-      margin-right: 10px;
-      margin-left: 100px;
-      vertical-align: middle;
-  }
+h2 {
+    color: #4a0072;
+}
 
-  /* ===== RESPONSIVIDADE ===== */
-  @media (max-width: 768px) {
-      .navbar {
-          flex-direction: column;
-          text-align: center;
-      }
+.intro {
+    margin: 20px 100px auto 60px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-      .navintro {
-          flex-direction: column;
-          margin-bottom: 10px;
-      }
+.divtexto {
+    margin-left: 60px;
+}
 
-      .navbar-nav {
-          flex-direction: column;
-          gap: 10px;
-          margin-left: 0;
-      }
+.divtexto h2 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
 
-      .logo {
-          margin: 0 auto;
-      }
-  }
+.divtexto p {
+    font-size: 1.08em;
+    margin-right: 3em;
+}
 
-  @media (max-width: 480px) {
-      .navbar-brand {
-          font-size: 1.5em;
-      }
+.imgintro {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
 
-      .navbar-nav {
-          font-size: 1em;
-      }
-  }
+/* ===== TOPICS ===== */
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
 
+.topic-btn {
+    background: #9c27b0;
+    color: white;
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
 
-  section {
-      padding: 50px 20px;
-      text-align: center;
-  }
+.topic-btn:hover {
+    background: #7a1c8d;
+}
 
-  h2 {
-      color: #4a0072;
-  }
+/* ===== MODAL ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
 
-  .intro {
-      margin: 20px 100px auto 100px;
-      text-align: left;
-      display: flex;
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
 
-      .divtexto {
-          margin-left: 1em;
-      }
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #6a0dad;
+}
 
-      .divtexto h2,
-      .divtexto p {
-          margin-right: 3em;
-      }
+/* ===== RESPONSIVIDADE ===== */
+/* Telas grandes: monitores > 1600px */
+@media (min-width: 1100px) {
 
-      h2 {
-          font-size: 2.8em;
-      }
+    .navbar-brand {
+        font-size: 2.5em;
+    }
 
-      p {
-          font-size: 1.08em;
-      }
+    .navbar-nav {
+        font-size: 1.3em;
+        gap: 20px;
+    }
 
-  }
+    .intro {
+        margin: 40px;
+        gap: 60px;
+    }
 
-  .imgintro {
-      margin-top: 2em;
-      margin-left: 3em;
-      width: 350px;
-      height: 350px;
-  }
+    .divtexto {
+        margin-left: 80px;
+    }
 
-  .topics {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-  }
+    .divtexto h2 {
+        font-size: 3.2em;
+    }
 
-  .topic-btn {
-      background: #9c27b0;
-      color: white;
-      width: 250px;
-      height: 100px;
-      font-size: 20px;
-      margin: 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      border: none;
-  }
+    .divtexto p {
+        font-size: 1.2em;
+    }
 
-  /* ==== MODAL ==== */
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 1050;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      justify-content: center;
-      align-items: center;
-  }
+    .imgintro {
+        width: 450px;
+        height: 450px;
+    }
 
-  .modal-content {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 600px;
-      width: 90%;
-      text-align: left;
-      position: relative;
-  }
+    .topic-btn {
+        width: 300px;
+        height: 120px;
+        font-size: 22px;
+    }
 
+    .modal-content {
+        max-width: 800px;
+        font-size: 1.1em;
+    }
+}
 
-  .modal-backdrop {
-      z-index: 1040 !important;
-  }
+/* Tablets */
+@media (max-width: 1024px) {
+    .intro {
+        margin: 20px 40px;
+    }
 
-  .close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 20px;
-      cursor: pointer;
-      color: #6a0dad;
-  }
+    .divtexto h2 {
+        font-size: 2.2em;
+    }
+
+    .imgintro {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navintro {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .divtexto h2 {
+        font-size: 2em;
+    }
+
+    .divtexto p {
+        margin: 0 auto;
+    }
+
+    .imgintro {
+        margin-top: 20px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .topic-btn {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    .navbar-nav {
+        font-size: 1em;
+    }
+
+    .modal-content {
+        padding: 20px;
+        font-size: 0.9em;
+    }
+}
