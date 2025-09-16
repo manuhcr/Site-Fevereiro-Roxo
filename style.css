@@ -1,297 +1,423 @@
-body {
-    font-family: 'Outfit', sans-serif;
-    margin: 0;
-    background: #f7ebff;
-    color: #333;
-    cursor: default !important;
-    user-select: none;
-    max-width: none;
-    /* <<< garante largura total */
-}
+ html {
+     scroll-behavior: smooth;
+ }
 
-/* ===== NAVBAR ===== */
-.navbar {
-    background: #9A12AF !important;
-    position: fixed;
-    width: 100%;
-    color: white;
-    margin-top: -40px !important;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+ /* Animação de cada item */
+ .reveal {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: all 0.6s ease;
+ }
 
-.navintro {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+ .reveal.active {
+     opacity: 1;
+     transform: translateY(0);
+ }
 
-.navbar-brand,
-.navbar-brand:link,
-.navbar-brand:visited {
-    color: #FDE9FF !important;
-    text-decoration: none !important;
-    cursor: pointer !important;
-}
+ body {
+     font-family: 'Outfit', sans-serif;
+     margin: 0;
+     background: #f7ebff;
+     color: #333;
+     cursor: default !important;
+     user-select: none;
+     max-width: none;
+     /* <<< garante largura total */
+ }
 
-.navbar-brand:hover {
-    color: #fff0ff !important;
-}
+ /* ===== NAVBAR ===== */
+ .navbar {
+     background: #9A12AF !important;
+     position: fixed;
+     width: 100%;
+     color: white;
+     margin-top: -2px !important;
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 9999;
+     flex-wrap: wrap;
+ }
 
-.navbar-brand {
-    font-size: 2em;
-    font-weight: 400;
-    font-family: 'Sacramento', cursive;
-}
+ .navintro {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
 
-.navbar-nav {
-    display: flex;
-    gap: 6px;
-    font-size: 1.1em;
-    margin-left: auto;
-    margin-right: 100px;
-}
+ .navbar-brand,
+ .navbar-brand:link,
+ .navbar-brand:visited {
+     color: #FDE9FF !important;
+     text-decoration: none !important;
+     cursor: pointer !important;
+ }
 
-.navbar-nav a {
-    color: #ffffff !important;
-    text-decoration: none;
-}
+ .navbar-brand:hover {
+     color: #fff0ff !important;
+ }
 
-.navbar-nav a:hover {
-    color: #f3c9f8 !important;
-}
+ .navbar-brand {
+     font-size: 2em;
+     font-weight: 400;
+     font-family: 'Sacramento', cursive;
+ }
 
-.logo {
-    height: 40px;
-    margin-right: 10px;
-    margin-left: 100px;
-    vertical-align: middle;
-}
+ .navbar-nav {
+     display: flex;
+     gap: 6px;
+     font-size: 1.1em;
+     margin-left: auto;
+     margin-right: 100px;
+ }
 
-/* ===== INTRO SEÇÃO ===== */
-section {
-    padding: 140px 50px;
-    text-align: center;
-}
+ .navbar-nav a {
+     color: #ffffff !important;
+     text-decoration: none;
+ }
 
-h2 {
-    color: #4a0072;
-}
+ .navbar-nav a:hover {
+     color: #f3c9f8 !important;
+ }
 
-.intro {
-    margin: 20px 100px auto 60px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+ .logo {
+     height: 40px;
+     margin-right: 10px;
+     margin-left: 100px;
+     vertical-align: middle;
+ }
 
-.divtexto {
-    margin-left: 60px;
-}
+ /* ===== INTRO SEÇÃO ===== */
+ section {
+     padding: 140px 50px 2px;
+     text-align: center;
+ }
 
-.divtexto h2 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
 
-.divtexto p {
-    font-size: 1.08em;
-    margin-right: 3em;
-}
+ h1 {
+     color: #4a0072;
+ }
 
-.imgintro {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-}
+ .intro {
+     margin: 20px 100px auto 60px;
+     text-align: left;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+ }
 
-/* ===== TOPICS ===== */
-.topics {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-}
+ .divtexto {
+     margin-left: 60px;
+ }
 
-.topic-btn {
-    background: #9c27b0;
-    color: white;
-    width: 250px;
-    height: 100px;
-    font-size: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s;
-}
+ .divtexto h1 {
+     font-size: 2.8em;
+     margin-bottom: 10px;
+ }
 
-.topic-btn:hover {
-    background: #7a1c8d;
-}
+ .divtexto p {
+     font-size: 1.08em;
+     margin-right: 3em;
+ }
 
-/* ===== MODAL ===== */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1050;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-}
+ .imgintro {
+     width: 350px;
+     height: 350px;
+     object-fit: cover;
+ }
 
-.modal-content {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 600px;
-    width: 90%;
-    text-align: left;
-    position: relative;
-}
+ /* ===== TOPICS ===== */
+ .topics {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 15px;
+     margin-top: 30px;
+ }
 
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #6a0dad;
-}
+ .topic-btn {
+     background: #9c27b0;
+     color: white;
+     width: 250px;
+     height: 100px;
+     font-size: 20px;
+     margin: 20px;
+     border-radius: 8px;
+     cursor: pointer;
+     border: none;
+     transition: background 0.3s;
+ }
 
-/* ===== RESPONSIVIDADE ===== */
-/* Telas grandes: monitores > 1600px */
-@media (min-width: 1100px) {
+ .topic-btn:hover {
+     background: #7a1c8d;
+ }
 
-    .navbar-brand {
-        font-size: 2.5em;
-    }
+ /* ===== MODAL ===== */
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1050;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     justify-content: center;
+     align-items: center;
+ }
 
-    .navbar-nav {
-        font-size: 1.3em;
-        gap: 20px;
-    }
+ .modal-content {
+     background: white;
+     padding: 30px;
+     border-radius: 12px;
+     max-width: 600px;
+     width: 90%;
+     text-align: left;
+     position: relative;
+ }
 
-    .intro {
-        margin: 40px;
-        gap: 60px;
-    }
+ .close {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     font-size: 20px;
+     cursor: pointer;
+     color: #6a0dad;
+ }
 
-    .divtexto {
-        margin-left: 80px;
-    }
+ .jogos {
+     h1 {
+         color: #4a0072;
+         font-size: 2.5em;
+         margin: auto 20% auto 20%;
+     }
 
-    .divtexto h2 {
-        font-size: 3.2em;
-    }
+     h2 {
+         color: #4a0072;
+         margin-top: 50px;
+         font-size: 2em;
+     }
 
-    .divtexto p {
-        font-size: 1.2em;
-    }
+     p {
+         margin: 2% 15% auto 15%;
+         font-size: 20px;
+         text-align: center;
+         font-weight: 300;
+     }
 
-    .imgintro {
-        width: 450px;
-        height: 450px;
-    }
+     .digitais {
+         margin-top: 20px;
+         display: flex;
+         gap: 30px;
 
-    .topic-btn {
-        width: 300px;
-        height: 120px;
-        font-size: 22px;
-    }
+         .jogo {
+             height: 300px;
+             width: 300px;
+             background-color: #F5EFF8;
+             border: 1px solid #c6b5e0;
 
-    .modal-content {
-        max-width: 800px;
-        font-size: 1.1em;
-    }
-}
+             img {
+                 width: 70px;
+                 height: 70px;
+                 align-self: anchor-center;
+                 margin-top: 30px;
+                 border-radius: 20px;
+             }
 
-/* Tablets */
-@media (max-width: 1024px) {
-    .intro {
-        margin: 20px 40px;
-    }
+             .card-body {
+                 padding: 1px;
+             }
 
-    .divtexto h2 {
-        font-size: 2.2em;
-    }
+             .card-title {
+                 font-size: 24px;
+                 margin-top: 8px;
+                 color: #990EAE;
+             }
 
-    .imgintro {
-        width: 280px;
-        height: 280px;
-    }
-}
+             .card-text {
+                 font-size: 16px;
+             }
 
-/* Celulares */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
+             .btn {
+                 margin-top: 20px;
+                 padding: 8px 35px;
+                 background-color: #E4CAE5;
+                 font-size: 18px;
+                 color: #4D0957;
+                 border: none;
+             }
+         }
+     }
 
-    .navintro {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
+ }
 
-    .navbar-nav {
-        flex-direction: column;
-        gap: 10px;
-        margin: 0;
-    }
+ .jogo {
+     height: 350px;
+     background-color: #F5EFF8;
+ }
 
-    .logo {
-        margin: 0 auto;
-    }
+ .atividades {
+     h1 {
+         color: #4a0072;
+         text-align: left;
+         font-size: 2.5em;
+     }
 
-    .intro {
-        flex-direction: column;
-        text-align: center;
-    }
+     h2 {
+         color: #4a0072;
+         margin-top: 50px;
+         text-align: left;
+         font-size: 2em;
+     }
 
-    .divtexto h2 {
-        font-size: 2em;
-    }
+     h3 {
+         color: #4a0072;
+         margin-top: 50px;
+         text-align: left;
+         font-size: 1.5em;
+     }
 
-    .divtexto p {
-        margin: 0 auto;
-    }
 
-    .imgintro {
-        margin-top: 20px;
-        width: 220px;
-        height: 220px;
-    }
+     p {
+         text-align: left;
+         display: flex;
+         margin-left: auto;
+         font-size: 20px;
+         font-weight: 300;
+     }
 
-    .topic-btn {
-        width: 90%;
-        height: auto;
-        padding: 15px;
-        font-size: 18px;
-    }
-}
 
-/* Smartphones pequenos */
-@media (max-width: 480px) {
-    .navbar-brand {
-        font-size: 1.5em;
-    }
 
-    .navbar-nav {
-        font-size: 1em;
-    }
+ }
 
-    .modal-content {
-        padding: 20px;
-        font-size: 0.9em;
-    }
-}
+
+ /* ===== RESPONSIVIDADE ===== */
+ /* Telas grandes: monitores > 1600px */
+ @media (min-width: 1100px) {
+
+     .navbar-brand {
+         font-size: 2em;
+     }
+
+     .navbar-nav {
+         font-size: 1.1em;
+         gap: 20px;
+     }
+
+     .intro {
+         margin: 2px;
+         gap: 6px;
+     }
+
+     .divtexto {
+         margin-left: 80px;
+     }
+
+     .divtexto h2 {
+         font-size: 3.1em;
+     }
+
+     .divtexto p {
+         font-size: 1.2em;
+         font-weight: 300;
+     }
+
+     .imgintro {
+         width: 350px;
+         height: 350px;
+         margin-right: 40px;
+     }
+
+     .topic-btn {
+         width: 250px;
+         height: 100px;
+         font-size: 22px;
+     }
+
+     .modal-content {
+         max-width: 800px;
+         font-size: 1.1em;
+     }
+ }
+
+ /* Tablets */
+ @media (max-width: 1024px) {
+     .intro {
+         margin: 20px 40px;
+     }
+
+     .divtexto h2 {
+         font-size: 2.2em;
+     }
+
+     .imgintro {
+         width: 280px;
+         height: 280px;
+     }
+ }
+
+ /* Celulares */
+ @media (max-width: 768px) {
+     .navbar {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .navintro {
+         flex-direction: column;
+         margin-bottom: 10px;
+     }
+
+     .navbar-nav {
+         flex-direction: column;
+         gap: 10px;
+         margin: 0;
+     }
+
+     .logo {
+         margin: 0 auto;
+     }
+
+     .intro {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .divtexto h2 {
+         font-size: 2em;
+     }
+
+     .divtexto p {
+         margin: 0 auto;
+     }
+
+     .imgintro {
+         margin-top: 20px;
+         width: 220px;
+         height: 220px;
+     }
+
+     .topic-btn {
+         width: 90%;
+         height: auto;
+         padding: 15px;
+         font-size: 18px;
+     }
+ }
+
+ /* Smartphones pequenos */
+ @media (max-width: 480px) {
+     .navbar-brand {
+         font-size: 1.5em;
+     }
+
+     .navbar-nav {
+         font-size: 1em;
+     }
+
+     .modal-content {
+         padding: 20px;
+         font-size: 0.9em;
+     }
+ }
