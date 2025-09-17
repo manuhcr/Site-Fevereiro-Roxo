@@ -348,28 +348,33 @@
          font-size: 1.1em;
      }
 
-     .digitais {
-         margin-top: 60px;
-         display: flex;
-         gap: 70px;
+     .jogos {
+         .digitais {
+             margin-top: 60px;
+             display: flex;
+             gap: 70px;
+
+             .jogo {
+                 height: 350px;
+                 width: 300px;
+                 background-color: #F5EFF8;
+                 border: 1px solid #c6b5e0;
+             }
+
+             .card-text {
+                 font-size: 22px;
+             }
+
+             .card-title {
+                 font-size: 34px;
+                 margin-top: 20px;
+                 color: #990EAE;
+             }
+         }
+
      }
 
-     .jogo {
-         height: 350px;
-         width: 300px;
-         background-color: #F5EFF8;
-         border: 1px solid #c6b5e0;
-     }
 
-     .card-text {
-         font-size: 22px;
-     }
-
-     .card-title {
-         font-size: 34px;
-         margin-top: 20px;
-         color: #990EAE;
-     }
  }
 
 
