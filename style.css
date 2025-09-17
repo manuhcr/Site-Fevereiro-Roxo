@@ -306,8 +306,8 @@
      }
 
      .intro {
-         margin: 2px;
-         gap: 6px;
+         margin: auto 60px auto 60px;
+         gap: 100px;
      }
 
      .divtexto {
@@ -329,8 +329,16 @@
          margin-right: 40px;
      }
 
+     .topics {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 10px;
+         margin-top: 30px;
+     }
+
      .topic-btn {
-         width: 250px;
+         width: 314px;
          height: 100px;
          font-size: 22px;
      }
@@ -339,7 +347,31 @@
          max-width: 800px;
          font-size: 1.1em;
      }
+
+     .digitais {
+         margin-top: 60px;
+         display: flex;
+         gap: 70px;
+     }
+
+     .jogo {
+         height: 350px;
+         width: 300px;
+         background-color: #F5EFF8;
+         border: 1px solid #c6b5e0;
+     }
+
+     .card-text {
+         font-size: 22px;
+     }
+
+     .card-title {
+         font-size: 34px;
+         margin-top: 20px;
+         color: #990EAE;
+     }
  }
+
 
  /* Tablets */
  @media (max-width: 1024px) {
