@@ -509,6 +509,14 @@
          display: block;
          margin: 2vw 6vw 2vw 6vw;
      }
+
+     .imagens {
+         display: none;
+     }
+
+     .imagem {
+         display: none;
+     }
  }
 
  /* 🔹 Mobile médio (481px – 768px) */
@@ -607,7 +615,6 @@
      }
 
      .jogos .digitais .jogo .card-body {
-         padding: 5vw;
          margin: -6vw !important;
      }
 
@@ -624,7 +631,7 @@
          margin-top: 20px;
          padding: 8px 35px;
          background-color: #E4CAE5;
-         font-size: 4vw;
+         font-size: 2.5vw;
          color: #4D0957;
          border: none;
      }
