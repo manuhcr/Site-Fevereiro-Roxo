@@ -477,7 +477,7 @@
      .jogos .digitais .jogo {
          width: 60%;
          max-width: 400px;
-         height: fit-content;
+         height: 74vw !important;
      }
 
 
