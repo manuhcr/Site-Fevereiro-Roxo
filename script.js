@@ -45,3 +45,4 @@ window.addEventListener("scroll", revelar);
 
 // 🔹 Executa também quando a página carregar
 revelar();
+

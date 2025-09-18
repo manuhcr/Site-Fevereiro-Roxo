@@ -2,17 +2,7 @@
      scroll-behavior: smooth;
  }
 
- /* Animação de cada item */
- .reveal {
-     opacity: 0;
-     transform: translateY(30px);
-     transition: all 0.6s ease;
- }
 
- .reveal.active {
-     opacity: 1;
-     transform: translateY(0);
- }
 
  body {
      font-family: 'Outfit', sans-serif;
@@ -26,19 +16,29 @@
  }
 
  /* ===== NAVBAR ===== */
+
  .navbar {
      background: #9A12AF !important;
      position: fixed;
+     top: 0;
+     /* sempre no topo */
+     left: 0;
      width: 100%;
      color: white;
-     margin-top: -2px !important;
-     padding: 15px;
+     margin: 0;
+     /* remove negativo */
+     padding: 15px 2vw;
+     /* padding horizontal proporcional */
      display: flex;
      align-items: center;
      justify-content: space-between;
      z-index: 9999;
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
+     /* evita quebrar no mobile */
+     box-sizing: border-box;
+     /* garante que padding não expanda a barra */
  }
+
 
  .navintro {
      display: flex;
@@ -142,7 +142,7 @@
      width: 250px;
      height: 100px;
      font-size: 20px;
-     margin: 20px;
+     margin: 10px;
      border-radius: 8px;
      cursor: pointer;
      border: none;
@@ -150,107 +150,143 @@
  }
 
  .topic-btn:hover {
-     background: #7a1c8d;
+     background: #c07cce !important;
+ }
+
+ .topic-btn:active {
+     background: #c07cce !important;
+ }
+
+ .btn.active {
+     background: #9c27b0;
  }
 
  /* ===== MODAL ===== */
- .modal {
-     display: none;
-     position: fixed;
-     z-index: 1050;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.6);
-     justify-content: center;
-     align-items: center;
- }
-
- .modal-content {
+ .modal-content.conteudo {
+     margin-top: 8vw;
      background: white;
      padding: 30px;
      border-radius: 12px;
-     max-width: 600px;
-     width: 90%;
+     width: 100%;
+     height: -webkit-fill-available;
      text-align: left;
      position: relative;
  }
 
- .close {
-     position: absolute;
-     top: 10px;
-     right: 15px;
-     font-size: 20px;
-     cursor: pointer;
+ /* Deixa todos os modais com tamanho padronizado */
+ .modal-dialog {
+     max-width: 900px;
+     /* largura fixa "ok" (entre lg e xl) */
+     width: 90%;
+     /* ocupa 90% da tela em telas menores */
+ }
+
+ /* O corpo do modal fica rolável se passar do limite */
+ .modal-dialog-scrollable .modal-body {
+     max-height: 70vh;
+     /* altura máxima: 70% da tela */
+     overflow-y: auto;
+     /* ativa rolagem vertical */
+ }
+
+ /* Melhorando a leitura dentro */
+ .modal-body h2 {
+     margin-top: 1rem;
+     font-size: 1.25rem;
+     font-weight: bold;
+ }
+
+ .modal-body p {
+     text-align: justify;
+     line-height: 1.6;
+     margin-bottom: 0.8rem;
+ }
+
+ .modal-header .btn-close {
      color: #6a0dad;
  }
 
- .jogos {
-     h1 {
-         color: #4a0072;
-         font-size: 2.5em;
-         margin: auto 20% auto 20%;
-     }
-
-     h2 {
-         color: #4a0072;
-         margin-top: 50px;
-         font-size: 2em;
-     }
-
-     p {
-         margin: 2% 15% auto 15%;
-         font-size: 20px;
-         text-align: center;
-         font-weight: 300;
-     }
-
-     .digitais {
-         margin-top: 20px;
-         display: flex;
-         gap: 30px;
-
-         .jogo {
-             height: 300px;
-             width: 300px;
-             background-color: #F5EFF8;
-             border: 1px solid #c6b5e0;
-
-             img {
-                 width: 70px;
-                 height: 70px;
-                 align-self: anchor-center;
-                 margin-top: 30px;
-                 border-radius: 20px;
-             }
-
-             .card-body {
-                 padding: 1px;
-             }
-
-             .card-title {
-                 font-size: 24px;
-                 margin-top: 8px;
-                 color: #990EAE;
-             }
-
-             .card-text {
-                 font-size: 16px;
-             }
-
-             .btn {
-                 margin-top: 20px;
-                 padding: 8px 35px;
-                 background-color: #E4CAE5;
-                 font-size: 18px;
-                 color: #4D0957;
-                 border: none;
-             }
-         }
-     }
-
+ .sobre h1 {
+     font-size: 2.2vw !important;
  }
+
+ .modal.fade .modal-dialog {
+     /* animação suave */
+     transform: translateY(30px);
+     transition: transform 0.3s ease-out;
+     justify-content: center;
+ }
+
+ .modal.show .modal-dialog {
+     justify-content: center !important;
+     transform: translateY(0);
+ }
+
+ /*jogos*/
+ .jogos h1 {
+     color: #4a0072;
+     font-size: 2.5em;
+     margin: auto 20% auto 20%;
+ }
+
+ .jogos h2 {
+     color: #4a0072;
+     margin-top: 50px;
+     font-size: 2em;
+ }
+
+ .jogos p {
+     margin: 2% 15% auto 15%;
+     font-size: 20px;
+     text-align: center;
+     font-weight: 300;
+ }
+
+ .jogos .digitais {
+     margin-top: 20px;
+     display: flex;
+     gap: 30px;
+ }
+
+ .jogos .digitais .jogo {
+     height: 300px;
+     width: 300px;
+     background-color: #F5EFF8;
+     border: 1px solid #c6b5e0;
+     border-radius: 10px;
+ }
+
+ .jogos .digitais .jogo img {
+     width: 70px;
+     height: 70px;
+     align-self: center;
+     margin-top: 30px;
+     border-radius: 20px;
+ }
+
+ .jogos .digitais .jogo .card-body {
+     padding: 1px;
+ }
+
+ .jogos .digitais .jogo .card-title {
+     font-size: 24px;
+     margin-top: 8px;
+     color: #990EAE;
+ }
+
+ .jogos .digitais .jogo .card-text {
+     font-size: 16px;
+ }
+
+ .jogos .digitais .jogo .btn {
+     margin-top: 20px;
+     padding: 8px 35px;
+     background-color: #E4CAE5;
+     font-size: 18px;
+     color: #4D0957;
+     border: none;
+ }
+
 
  .jogo {
      height: 350px;
@@ -291,56 +327,537 @@
 
  }
 
+ /* ========== MINI CELULARES (até 480px) ========== */
+ @media (max-width: 480px) {
 
- /* ===== RESPONSIVIDADE ===== */
- /* Telas grandes: monitores > 1600px */
- @media (min-width: 1100px) {
+     /* Navbar */
+     .navbar {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         padding: 1.5em 5vw;
+         gap: 1.5vw;
+         margin: 0;
+         box-sizing: border-box;
+         z-index: 9999;
+     }
+
+     .navintro {
+         flex-direction: column;
+         align-items: center;
+         gap: 1.5vw;
+     }
 
      .navbar-brand {
-         font-size: 2em;
+         font-size: 5vw;
+         margin: 0.5em 0;
      }
 
-     .navbar-nav {
-         font-size: 1.1em;
-         gap: 20px;
+     .logo {
+         height: 12vw;
+         margin: 0 auto;
      }
 
+     /* Intro */
      .intro {
-         margin: auto 60px auto 60px;
-         gap: 100px;
+         flex-direction: column;
+         text-align: center;
+         margin: 5vw 2vw 2vw 2vw;
+         gap: 4vw;
      }
 
      .divtexto {
-         margin-left: 80px;
+         margin: 5vw;
      }
 
-     .divtexto h2 {
-         font-size: 3.1em;
+     .divtexto h1 {
+         font-size: 6vw;
      }
 
      .divtexto p {
-         font-size: 1.2em;
-         font-weight: 300;
+         font-size: 3.8vw;
+         text-align: center;
+         margin: 6vw -8vw;
      }
 
      .imgintro {
-         width: 350px;
-         height: 350px;
-         margin-right: 40px;
+         width: 55vw;
+         height: 55vw;
+         margin: 0 auto;
+     }
+
+     .sobre h1 {
+         font-size: 8vw !important;
+     }
+
+     /* Topics */
+     .topic-btn {
+         width: 80%;
+         font-size: 4vw;
+         height: 4em;
+         padding: 3vw;
+     }
+
+     .modal-content.conteudo {
+         margin-left: 5vw;
+         margin-top: 50vw;
+         width: 95%;
+         font-size: 3.6vw;
+     }
+
+     .modal-body {
+         padding: 3vw;
+     }
+
+     /* Cards */
+     .jogos {
+         margin: 2vw auto;
+         padding: 0 5vw;
+     }
+
+     .jogos h1 {
+         margin-top: 22vw;
+         font-size: 6vw;
+         text-align: center;
+     }
+
+     .jogos h2 {
+         margin-top: 22vw;
+         font-size: 6vw;
+         text-align: center;
+     }
+
+     .jogos .digitais {
+         flex-direction: column;
+         gap: 4vw;
+         align-items: center;
+     }
+
+     .jogos .digitais .jogo {
+         width: 60%;
+         max-width: 400px;
+         height: 18em;
+     }
+
+     .jogos .digitais .jogo img {
+         width: 20vw;
+         height: 20vw;
+         margin-top: 5vw;
+     }
+
+
+     .jogos .digitais .card-title {
+         font-size: 4vw;
+         text-align: center;
+     }
+
+     .jogos .digitais .card-text {
+         font-size: 3.8vw !important;
+         text-align: center;
+     }
+
+     .jogo .btn {
+         font-size: 3.5vw !important;
+         padding: 2vw 5vw !important;
+         display: block;
+         margin: 2vw 6vw 2vw 6vw;
+     }
+ }
+
+ /* 🔹 Mobile médio (481px – 767px) */
+ @media (min-width: 481px) and (max-width: 767px) {
+     .navbar {
+         flex-direction: column;
+         /* centraliza elementos */
+         align-items: center;
+         justify-content: center;
+         padding: 15px 5vw;
+     }
+
+     .navbar-nav {
+         flex-direction: column;
+         gap: 2vw;
+     }
+
+     .navintro {
+         flex-direction: column;
+         align-items: center;
+         gap: 1.5vw;
+     }
+
+     .navbar-brand {
+         font-size: 4.5vw;
+         margin: 1vw 0;
+     }
+
+     .logo {
+         height: 10vw;
+         margin: 0 auto;
+     }
+
+     .intro {
+         flex-direction: column;
+         margin: 5vw;
+         gap: 4vw;
+         text-align: center;
+     }
+
+     .divtexto h1 {
+         font-size: 5vw;
+         margin: 4vw 10vw 4vw 6vw;
+     }
+
+     .divtexto p {
+         font-size: 2.6vw;
+     }
+
+     .imgintro {
+         width: 45vw;
+         height: 45vw;
+     }
+
+     .sobre h1 {
+         font-size: 4vw !important;
+     }
+
+     .topic-btn {
+         width: 80%;
+         font-size: 2.8vw;
+         padding: 2.2vw;
+     }
+
+     /* ===== CARDS ===== */
+     .jogos .digitais {
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 3vw;
+     }
+
+     .jogos .digitais .jogo {
+         width: 50%;
+         height: 55vw;
+     }
+
+     .jogos .digitais .jogo img {
+         width: 12vw;
+         height: 12vw;
+         margin-top: 5vw;
+     }
+
+     .jogos .digitais .jogo .card-body {
+         padding: 4vw;
+     }
+
+     .jogos .digitais .card-title {
+         font-size: 3vw;
+     }
+
+     .jogos .digitais .card-text {
+         font-size: 2.5vw !important;
+     }
+
+     .jogo .btn {
+         font-size: 2.8vw;
+         padding: 1.5vw 4vw;
+     }
+ }
+
+ /* 🔹 Tablets (768px – 1024px) */
+ @media (min-width: 768px) and (max-width: 1024px) {
+     .navbar {
+         flex-direction: row;
+         padding: 2.5vw;
+         gap: 2vw;
+     }
+
+     .navbar-expand-lg .navbar-collapse {
+         display: none !important;
+         /* esconde o menu expandido */
+     }
+
+     .navbar-expand-lg .navbar-toggler {
+         display: block;
+         /* mostra sempre o botão toggle */
+     }
+
+     .navintro {
+         flex-direction: row;
+         align-items: center;
+         gap: 1.5vw;
+     }
+
+     .navbar-brand {
+         font-size: 3vw;
+         margin: 0;
+     }
+
+     .navbar-nav {
+         flex-direction: row;
+         font-size: 1.8vw;
+         gap: 1.8vw;
+     }
+
+     .logo {
+         height: 7vw;
+     }
+
+     .intro {
+         flex-direction: column;
+         margin: 5vw;
+         gap: 4vw;
+         text-align: left;
+     }
+
+     .divtexto h1 {
+         font-size: 3.5vw;
+     }
+
+     .divtexto p {
+         font-size: 1.6vw;
+     }
+
+     .imgintro {
+         width: 30vw;
+         height: 30vw;
+     }
+
+     .topic-btn {
+         width: 40vw;
+         height: auto;
+         font-size: 1.8vw;
+         padding: 1.5vw;
+     }
+
+     /* ===== CARDS ===== */
+     .jogos .digitais {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 3vw;
+     }
+
+     .jogos .digitais .jogo {
+         width: 32%;
+         height: 32vw;
+     }
+
+     .jogos .digitais .jogo img {
+         width: 8vw;
+         height: 8vw;
+         margin-top: 2vw;
+     }
+
+     .jogos .digitais .card-title {
+         font-size: 2.5vw;
+     }
+
+     .jogos .digitais .card-text {
+         font-size: 2vw !important;
+     }
+
+     .jogo .btn {
+         font-size: 2.2vw;
+         padding: 1vw 3vw;
+     }
+ }
+
+ /* 🔹 Notebook pequeno (1025px – 1299px) */
+ @media (min-width: 1025px) and (max-width: 1299px) {
+     .navbar {
+         flex-direction: row;
+         padding: 20px;
+         align-items: center;
+         gap: 10vw;
+     }
+
+     .navbar-nav {
+         flex-direction: row !important;
+         font-size: 1.5vw;
+         gap: 1vw;
+         margin-right: 8vw;
+     }
+
+     .navbar-brand {
+         font-size: 2.5vw;
+         margin: 0;
+     }
+
+     .navbar-nav {
+         flex-direction: row !important;
+         font-size: 1.35vw;
+         gap: 0.2vw;
+     }
+
+     .logo {
+         height: 5vw;
+     }
+
+     .intro {
+         margin: 4vw;
+         gap: 3vw;
+     }
+
+     .divtexto h1 {
+         font-size: 3vw;
+     }
+
+     .divtexto p {
+         font-size: 1.3vw;
+     }
+
+     .imgintro {
+         width: 24vw;
+         height: 24vw;
      }
 
      .topics {
          display: flex;
          flex-wrap: wrap;
          justify-content: center;
-         gap: 10px;
-         margin-top: 30px;
+         gap: 0vw;
+         margin-top: 2vw;
      }
 
      .topic-btn {
-         width: 314px;
-         height: 100px;
-         font-size: 22px;
+         width: 20vw;
+         height: auto;
+         font-size: 1.4vw;
+         padding: 2vw;
+     }
+
+     /* ===== CARDS ===== */
+     .jogos .digitais {
+         gap: 2vw;
+         justify-content: center;
+     }
+
+     .jogos .digitais .jogo {
+         width: 40%;
+         height: 22vw;
+     }
+
+     .jogos .digitais .jogo .card-text {
+         font-size: 1em !important;
+     }
+
+     .jogos .digitais .jogo img {
+         width: 5vw;
+         height: 5vw;
+     }
+
+     .jogos .digitais .jogo .card-body {
+         padding: 2vw;
+         margin: -4vw;
+     }
+
+     .jogos .digitais .jogo .card-title {
+         font-size: 1.5vw;
+         margin-top: 3vw;
+     }
+
+
+     .jogo .btn {
+         font-size: 1.2vw;
+         padding: 0.8vw 2vw;
+     }
+ }
+
+
+
+ /* Telas grandes: monitores >= 1300px */
+ @media (min-width: 1300px) {
+     .container {
+         max-width: 10000px;
+         /* segura o conteúdo no centro */
+         margin: 0 auto;
+     }
+
+     .navbar {
+         padding: 20px;
+     }
+
+     .navbar-expand-lg .navbar-collapse {
+         display: flex !important;
+         flex-basis: auto;
+         margin-left: -8px;
+     }
+
+     .logo {
+         height: 3.5vw;
+     }
+
+     .navbar-brand {
+         font-size: 2.4vw;
+         /* proporcional à largura da tela */
+     }
+
+     .navbar-nav {
+         flex-direction: row !important;
+         font-size: 1.5vw;
+         gap: 1vw;
+         margin-right: 8vw;
+     }
+
+     .navbar-nav {
+         flex-direction: row !important;
+         font-size: 1.5vw;
+         gap: 1vw;
+         margin-right: 4vw;
+     }
+
+     .intro {
+         margin: auto 3vw;
+         gap: 6vw;
+     }
+
+     .divtexto {
+         margin-left: 4vw;
+         margin-top: 1vw;
+     }
+
+     .divtexto h1 {
+         font-size: 3.4vw;
+         margin-bottom: 10px;
+     }
+
+     .divtexto h2 {
+         font-size: 3vw;
+     }
+
+     .divtexto p {
+         font-size: 1.3vw;
+         font-weight: 300;
+     }
+
+
+     .imgintro {
+         width: 22vw;
+         height: 22vw;
+         margin-right: 2vw;
+         margin-top: 4vw;
+     }
+
+     .sobre h1 {
+         font-size: 2.5vw;
+     }
+
+     .topics {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 2vw;
+         margin-top: 2vw;
+     }
+
+     .topic-btn {
+         width: 18vw;
+         height: 6vw;
+         font-size: 1.3vw;
+         border-radius: 10px;
      }
 
      .modal-content {
@@ -348,113 +865,83 @@
          font-size: 1.1em;
      }
 
-     .jogos {
-         .digitais {
-             margin-top: 60px !important;
-             display: flex !important;
-             gap: 70px !important;
+     .jogos .digitais {
+         margin-top: 5vw !important;
+         display: flex !important;
+         gap: 3vw !important;
+         justify-content: center;
+     }
 
-             .jogo {
-                 height: 350px !important;
-                 width: 300px !important;
-                 background-color: #F5EFF8 !important;
-                 border: 1px solid #c6b5e0 !important;
-             }
+     .jogos .digitais .jogo {
+         height: 18vw !important;
+         width: 15vw !important;
+         background-color: #F5EFF8 !important;
+         border: 1px solid #c6b5e0 !important;
+         border-radius: 0.4vw;
+     }
 
-             .card-text {
-                 font-size: 22px !important;
-             }
-
-             .card-title {
-                 font-size: 34px !important;
-                 margin-top: 20px !important;
-                 color: #990EAE !important;
-             }
-         }
-
+     .jogos .digitais .jogo img {
+         width: 5vw;
+         height: 5vw;
+         align-self: anchor-center;
+         margin-top: 1.5vw;
+         border-radius: 20px;
      }
 
 
- }
-
-
- /* Tablets */
- @media (max-width: 1024px) {
-     .intro {
-         margin: 20px 40px;
+     .jogos .digitais .card-text {
+         font-size: 1vw !important;
      }
 
-     .divtexto h2 {
-         font-size: 2.2em;
+     .jogos .digitais .card-title {
+         font-size: 1.8vw !important;
+         margin-top: 0.4vw !important;
+         color: #990EAE !important;
      }
 
-     .imgintro {
-         width: 280px;
-         height: 280px;
-     }
- }
+     .jogos h1 {
+         font-size: 2.5vw;
 
- /* Celulares */
- @media (max-width: 768px) {
-     .navbar {
-         flex-direction: column;
-         text-align: center;
      }
 
-     .navintro {
-         flex-direction: column;
-         margin-bottom: 10px;
+     .jogos h2 {
+         margin-top: 4vw;
+         font-size: 2.5vw;
      }
 
-     .navbar-nav {
-         flex-direction: column;
-         gap: 10px;
-         margin: 0;
+     .jogos p {
+         margin: 2% 10% 3% 10%;
+         font-size: 1.5vw;
+         font-weight: 300;
      }
 
-     .logo {
-         margin: 0 auto;
+     .jogo .btn {
+         margin-top: 1vw !important;
+         padding: 0.4vw 2vw !important;
+         background-color: #E4CAE5;
+         font-size: 1.1vw !important;
+         color: #4D0957;
+         border: none;
+         border-radius: 0.5vw;
      }
 
-     .intro {
-         flex-direction: column;
-         text-align: center;
-     }
-
-     .divtexto h2 {
-         font-size: 2em;
-     }
-
-     .divtexto p {
-         margin: 0 auto;
-     }
-
-     .imgintro {
-         margin-top: 20px;
-         width: 220px;
-         height: 220px;
-     }
-
-     .topic-btn {
-         width: 90%;
-         height: auto;
-         padding: 15px;
-         font-size: 18px;
+     .atividades h3 {
+         color: #4a0072;
+         margin-top: 50px;
+         margin-left: 10vw;
+         text-align: left;
+         font-size: 2vw;
      }
  }
 
- /* Smartphones pequenos */
- @media (max-width: 480px) {
-     .navbar-brand {
-         font-size: 1.5em;
-     }
+ /* Animação de cada item */
+ .reveal {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: all 0.6s ease;
+ }
 
-     .navbar-nav {
-         font-size: 1em;
-     }
-
-     .modal-content {
-         padding: 20px;
-         font-size: 0.9em;
-     }
+ .reveal.active {
+     opacity: 1;
+     transform: translateY(0);
  }
