@@ -509,6 +509,14 @@
          display: block;
          margin: 2vw 6vw 2vw 6vw;
      }
+
+     .imagens {
+         display: none;
+     }
+
+     .imagem {
+         display: none;
+     }
  }
 
  /* 🔹 Mobile médio (481px – 768px) */
@@ -652,7 +660,6 @@
  .imagem {
      display: none;
  }
- }
 
  /* 🔹 Tablets (768px – 1024px) */
  @media (min-width: 768px) and (max-width: 1024px) {
@@ -684,7 +691,7 @@
      }
 
      .navbar-brand {
-         font-size: 3vw;
+         font-size: 4vw;
          margin: 0;
      }
 
@@ -705,17 +712,23 @@
          text-align: left;
      }
 
+
+
      .divtexto h1 {
-         font-size: 3.5vw;
+         font-size: 4.5vw;
      }
 
      .divtexto p {
-         font-size: 1.6vw;
+         font-size: 2.2vw;
      }
 
      .imgintro {
          width: 30vw;
          height: 30vw;
+     }
+
+     .sobre h1 {
+         font-size: 3em !important;
      }
 
      .topic-btn {
@@ -978,7 +991,7 @@
 
      .navbar-nav {
          flex-direction: row !important;
-         font-size: 1.5vw;
+         font-size: 1.2vw;
          gap: 1vw;
          margin-right: 4vw;
      }
