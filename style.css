@@ -636,6 +636,31 @@
          border: none;
      }
 
+     .atividades {
+         h1 {
+             color: #4a0072;
+             text-align: left;
+             font-size: 2.5em;
+         }
+
+         h2 {
+             text-align: center;
+         }
+
+         h3 {
+             text-align: center;
+         }
+
+
+         p {
+             font-size: 4vw;
+             text-align: justify;
+         }
+
+
+
+     }
+
      .imagens {
          display: none;
 
