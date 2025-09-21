@@ -82,9 +82,7 @@
  }
 
  .logo {
-     height: 40px;
-     margin-right: 10px;
-     margin-left: 100px;
+     margin-left: 40px;
      vertical-align: middle;
  }
 
@@ -250,8 +248,10 @@
  }
 
  .jogos .digitais .jogo {
-     height: 300px;
-     width: 300px;
+     max-width: 600px;
+     /* Limita o tamanho máximo */
+     width: 100%;
+     /* Ocupa sempre a largura disponível */
      background-color: #F5EFF8;
      border: 1px solid #c6b5e0;
      border-radius: 10px;
@@ -317,6 +317,51 @@
      height: 18vw;
      border-radius: 1vw;
  }
+
+ .terapeuticas {
+     display: flex !important;
+ }
+
+ .terapeuticas .imagens .img1 {
+     width: 16vw !important;
+     height: 12vw !important;
+     border-radius: 0.8vw;
+ }
+
+ .terapeuticas .imagens .img2 {
+     width: 16vw !important;
+     height: 12vw !important;
+     border-radius: 0.8vw;
+ }
+
+ .terapeuticas .img3 {
+     margin-top: 1vw;
+     width: 30vw !important;
+     height: 15vw !important;
+     border-radius: 1vw;
+ }
+
+ .terapeuticas .imagens {
+     display: flex;
+     margin-top: 6vw;
+     gap: 1vw;
+ }
+
+ .terapeuticas .ativ h2 {
+     margin: 1vw;
+ }
+
+ .texto p {
+     text-align: left;
+     font-size: 20px;
+     font-weight: 300;
+     margin: 2vw auto;
+ }
+
+ .jogos .ativ {
+     margin: 4vw auto auto 4vw;
+ }
+
 
  .atividades {
 
@@ -417,9 +462,9 @@
      }
 
      .divtexto p {
-         font-size: 3.8vw;
-         text-align: center;
-         margin: 6vw -8vw;
+         font-size: 4.5vw;
+         text-align: justify;
+         margin: 8vw -8vw;
      }
 
      .imgintro {
@@ -456,6 +501,13 @@
          padding: 0 5vw;
      }
 
+     .jogos p {
+         margin: 6vw;
+         font-size: 4.5vw;
+         text-align: justify;
+         font-weight: 300;
+     }
+
      .jogos h1 {
          margin-top: 22vw;
          font-size: 6vw;
@@ -464,7 +516,7 @@
 
      .jogos h2 {
          margin-top: 22vw;
-         font-size: 6vw;
+         font-size: 8vw;
          text-align: center;
      }
 
@@ -476,7 +528,7 @@
 
      .jogos .digitais .jogo {
          width: 60%;
-         max-width: 400px;
+         max-width: 450px;
          height: 74vw !important;
      }
 
@@ -499,8 +551,12 @@
      }
 
      .jogos .digitais .card-text {
-         font-size: 3.8vw !important;
+         font-size: 4.5vw !important;
          text-align: center;
+     }
+
+     .jogos .ativ {
+         margin: 0;
      }
 
      .jogo .btn {
@@ -517,6 +573,17 @@
      .imagem {
          display: none;
      }
+
+     .atividades h3 {
+         text-align: left;
+         font-size: 6vw;
+         margin-left: 5.5vw;
+     }
+
+     .imgs {
+         display: none;
+     }
+
  }
 
  /* 🔹 Mobile médio (481px – 768px) */
@@ -556,6 +623,7 @@
      }
 
      .logo {
+
          height: 10vw;
          margin: 0 auto;
      }
@@ -567,15 +635,20 @@
 
      }
 
+     .divtexto {
+         margin-top: 8vw;
+         margin-left: 0 !important;
+     }
+
      .divtexto h1 {
-         font-size: 5vw;
-         margin: 4vw 16vw 4vw 8vw;
+         font-size: 6vw;
          text-align: center;
      }
 
      .divtexto p {
          font-size: 3vw;
          text-align: justify;
+         margin: 2vw;
      }
 
      .imgintro {
@@ -584,12 +657,12 @@
      }
 
      .sobre h1 {
-         font-size: 4vw !important;
+         font-size: 6vw !important;
      }
 
      .topic-btn {
          width: 80%;
-         font-size: 2.8vw;
+         font-size: 4vw;
          padding: 2.2vw;
      }
 
@@ -599,95 +672,95 @@
 
      /* ===== CARDS ===== */
      .jogos h1 {
-         font-size: 4vw;
+         font-size: 6vw;
          margin: 0;
      }
 
-     .jogos .descjogos {
-         margin: 4% 0 auto 0;
-         font-size: 3vw;
+     .jogos h2 {
+         font-size: 5vw;
+         margin-top: 8vw;
          text-align: center;
+     }
+
+
+     .jogos .descjogos {
+         margin: 4vw 0 !important;
+         font-size: 4vw;
+         text-align: justify;
          font-weight: 300;
+     }
+
+     .jogos .digitais {
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 3vw;
+     }
+
+     .jogos .digitais .jogo {
+         width: 40%;
+         height: 44vw;
+     }
+
+     .jogos .digitais .jogo img {
+         width: 12vw;
+         height: 12vw;
+         margin-top: 3vw;
+     }
+
+     .jogos .digitais .jogo .card-body {
+         margin: -4vw !important;
+     }
+
+     .jogos .digitais .card-title {
+         font-size: 4vw !important;
+         margin-top: 6vw !important;
+     }
+
+     .jogos .digitais .card-text {
+         font-size: 3vw !important;
+     }
+
+     .jogos .digitais .jogo .btn {
+         margin-top: 20px;
+         padding: 8px 35px;
+         font-size: 2vw;
+     }
+
+
+     .atividades p {
+         text-align: justify;
+         display: flex;
+         font-size: 20px;
+         font-weight: 300;
+         margin: 0 !important;
+     }
+
+
+     .imagens {
+         display: none;
+
+     }
+
+     .imagem {
+         display: none;
      }
  }
 
- .jogos .digitais {
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 3vw;
- }
 
- .jogos .digitais .jogo {
-     width: 50%;
-     height: 55vw;
- }
-
- .jogos .digitais .jogo img {
-     width: 12vw;
-     height: 12vw;
-     margin-top: 5vw;
- }
-
- .jogos .digitais .jogo .card-body {
-     padding: 5vw;
-     margin: -6vw !important;
- }
-
- .jogos .digitais .card-title {
-     font-size: 4vw !important;
-     margin-top: 6vw !important;
- }
-
- .jogos .digitais .card-text {
-     font-size: 3vw !important;
- }
-
- .jogos .digitais .jogo .btn {
-     margin-top: 20px;
-     padding: 8px 35px;
-     background-color: #E4CAE5;
-     font-size: 4vw;
-     color: #4D0957;
-     border: none;
- }
-
- .imagens {
-     display: none;
-
- }
-
- .imagem {
-     display: none;
- }
 
  /* 🔹 Tablets (768px – 1024px) */
  @media (min-width: 768px) and (max-width: 1024px) {
      .navbar {
          flex-direction: row;
-         padding: 2.5vw;
-         gap: 2vw;
-     }
-
-     .navbar-expand-lg .navbar-collapse {
-         display: none !important;
-         /* esconde o menu expandido */
-     }
-
-     .navbar-expand-lg .navbar-toggler {
-         display: block;
-         /* mostra sempre o botão toggle */
-     }
-
-     .navbar-toggler {
-         display: flex !important;
-         justify-self: anchor-center !important;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1em 5vw;
      }
 
      .navintro {
          flex-direction: row;
-         align-items: center;
-         gap: 1.5vw;
+         gap: 2vw;
      }
 
      .navbar-brand {
@@ -695,31 +768,51 @@
          margin: 0;
      }
 
-     .navbar-nav {
-         flex-direction: row;
-         font-size: 1.8vw;
-         gap: 1.8vw;
+     .logo {
+         height: 6vw;
+         margin: 0;
      }
 
-     .logo {
-         height: 7vw;
+     .container-fluid {
+         flex-direction: column;
+     }
+
+     .navbar-expand-custom {
+         flex-direction: column;
+         /* empilha vertical */
+         width: 100%;
+     }
+
+     .navbar-expand-custom .navbar-nav {
+         flex-direction: column;
+         /* lista vertical */
+     }
+
+     .navbar-expand-lg .navbar-collapse {
+         margin: auto 1vw auto 16vw;
      }
 
      .intro {
          flex-direction: column;
-         margin: 5vw;
          gap: 4vw;
+         margin: 2vw !important;
          text-align: left;
      }
 
-
+     .divtexto {
+         margin-left: auto !important;
+         justify-self: unsets;
+     }
 
      .divtexto h1 {
          font-size: 4.5vw;
+         text-align: center;
      }
 
      .divtexto p {
-         font-size: 2.2vw;
+         margin: 4vw auto;
+         font-size: 2.8vw;
+         text-align: justify;
      }
 
      .imgintro {
@@ -743,20 +836,25 @@
          margin-top: 1vw;
      }
 
-     .jogos .desc p {
-         text-align: center;
+     .desc {
+         margin: auto !important;
+     }
+
+     .jogos .descjogos {
+         font-size: 2.5vw;
+         text-align: justify;
      }
 
      .jogos h1 {
-         color: #4a0072;
-         font-size: 2.5em;
-         margin: auto 20% auto 20%;
+         margin: 0 !important;
+         font-size: 4vw;
      }
 
+
      .jogos h2 {
-         color: #4a0072;
          margin-top: 50px;
-         font-size: 3vw;
+         margin-bottom: 5vw;
+         font-size: 5vw;
      }
 
      .jogos p {
@@ -772,14 +870,14 @@
      }
 
      .jogos .digitais .jogo {
-         width: 32%;
-         height: 32vw;
+         width: 31%;
+         height: 36vw;
      }
 
      .jogos .digitais .jogo img {
          width: 8vw;
          height: 8vw;
-         margin-top: 2vw;
+         margin-top: 3vw;
      }
 
      .jogos .digitais .card-title {
@@ -787,6 +885,8 @@
      }
 
      .jogos .digitais .card-text {
+         margin: auto 3vw;
+         padding: 2px;
          text-align: center;
          font-size: 2vw !important;
      }
@@ -800,8 +900,13 @@
      .imagens {
          display: flex;
          flex-wrap: wrap;
-         margin-top: 14vw;
-         gap: 3vw;
+         margin: 24vw 2vw 0;
+         gap: 4vw;
+     }
+
+     .imgs {
+         display: flex;
+         flex-wrap: nowrap;
      }
 
      .atividades .imagens .img1 {
@@ -816,12 +921,13 @@
      }
 
      .atividades .imagem .img3 {
-         margin-top: 17vw !important;
+         margin-top: 26vw;
          width: 32vw;
          height: 18vw;
          border-radius: 1vw;
      }
  }
+
 
  /* 🔹 Notebook pequeno (1025px – 1299px) */
  @media (min-width: 1025px) and (max-width: 1299px) {
@@ -991,19 +1097,18 @@
 
      .navbar-nav {
          flex-direction: row !important;
-         font-size: 1.2vw;
+         font-size: 1.4vw;
          gap: 1vw;
          margin-right: 4vw;
      }
 
      .intro {
-         margin: auto 3vw;
-         gap: 6vw;
+         margin: 4vw;
+         padding: 6vw 2vw !important;
      }
 
      .divtexto {
-         margin-left: 4vw;
-         margin-top: 1vw;
+         margin-left: 0 !important;
      }
 
      .divtexto h1 {
@@ -1016,16 +1121,13 @@
      }
 
      .divtexto p {
-         font-size: 1.3vw;
+         font-size: 1.4vw;
          font-weight: 300;
      }
 
-
      .imgintro {
-         width: 22vw;
-         height: 22vw;
-         margin-right: 2vw;
-         margin-top: 4vw;
+         width: 28vw;
+         height: 28vw;
      }
 
      .sobre h1 {
@@ -1075,15 +1177,13 @@
      .jogos .digitais {
          margin-top: 4vw;
          display: flex;
-         gap: 3vw;
+         gap: 1vw;
          justify-content: center;
      }
 
      .jogos .digitais .jogo {
-         height: 18vw !important;
-         width: 15vw !important;
-         background-color: #F5EFF8 !important;
-         border: 1px solid #c6b5e0 !important;
+         height: 19vw !important;
+         width: 18% !important;
          border-radius: 0.4vw;
      }
 
@@ -1097,7 +1197,7 @@
 
 
      .jogos .digitais .card-text {
-         font-size: 1vw !important;
+         font-size: 1.1vw !important;
      }
 
      .jogos .digitais .card-title {
