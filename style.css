@@ -718,7 +718,7 @@
      }
 
      .jogos .digitais .card-text {
-         font-size: 3vw !important;
+         font-size: 2.5vw !important;
      }
 
      .jogos .digitais .jogo .btn {
@@ -737,12 +737,16 @@
      }
 
 
-     .imagens {
+     .imgs {
          display: none;
 
      }
 
      .imagem {
+         display: none;
+     }
+
+     .imagens {
          display: none;
      }
  }
@@ -896,15 +900,23 @@
          padding: 1vw 3vw;
      }
 
-
      .imagens {
          display: flex;
-         flex-wrap: wrap;
-         margin: 24vw 2vw 0;
          gap: 4vw;
+         margin: 12em auto auto 1em;
+         flex-wrap: wrap;
+     }
+
+     .imgns {
+         display: flex;
+         margin: 17vw 2vw 0;
+         gap: 1vw;
+         width: 20px;
+         height: 20px;
      }
 
      .imgs {
+         margin: 12vw 4vw auto -4vw;
          display: flex;
          flex-wrap: nowrap;
      }
@@ -918,6 +930,25 @@
      .atividades .imagens .img2 {
          width: 18vw;
          height: 18vw;
+     }
+
+     .atividades .imagem .img3 {
+         margin-top: 26vw;
+         width: 32vw;
+         height: 18vw;
+         border-radius: 1vw;
+     }
+
+     .imgns .img1 {
+         border-radius: 2vw;
+         width: 18vw;
+         height: 18vw;
+     }
+
+     .imgns .img2 {
+         width: 18vw;
+         height: 18vw;
+         border-radius: 2vw;
      }
 
      .atividades .imagem .img3 {
@@ -1058,10 +1089,49 @@
          margin-top: 3vw;
      }
 
+     .terapeuticas .img3 {
+         margin-top: 1vw;
+         width: 32vw !important;
+         height: 16vw !important;
+         border-radius: 1vw;
+     }
 
      .jogo .btn {
          font-size: 1.2vw;
          padding: 0.8vw 2vw;
+     }
+
+     .imgs {
+         margin: auto;
+         display: flex;
+         flex-wrap: nowrap !important;
+         flex-direction: column;
+     }
+
+     .imgns {
+         display: flex;
+         flex-wrap: nowrap !important;
+         flex-direction: row;
+         gap: 2vw;
+     }
+
+     .imgns .img1 {
+         width: 16vw;
+         height: 16vw;
+         border-radius: 1vw;
+     }
+
+     .imgns .img2 {
+         width: 16vw;
+         height: 16vw;
+         border-radius: 1vw;
+     }
+
+     .imgns .img3 {
+         margin-top: 10vw;
+         width: 32vw;
+         height: 18vw;
+         border-radius: 1vw;
      }
  }
 
@@ -1237,6 +1307,8 @@
          text-align: left;
          font-size: 2vw;
      }
+
+
  }
 
  /* Animação de cada item */
