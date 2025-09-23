@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/purple-ribbon 1.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sacramento&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -42,7 +43,7 @@
                             <a class="nav-link" href="#jogos">Jogos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Bibliografia</a>
+                            <a href="#bibliografia" class="nav-link">Bibliografia</a>
                         </li>
                     </ul>
                 </div>
@@ -50,675 +51,826 @@
         </nav>
     </header>
 
-    <section id="intro" class="intro ">
-        <div class="divtexto reveal">
-            <h1>Você realmente sabe o que é Alzheimer?</h1>
-            <p>O Dia Mundial do Alzheimer, celebrado em 21 de setembro, representa um momento de reflexão e
-                conscientização
-                sobre uma doença que afeta não apenas a memória, mas também a autonomia e a qualidade de vida de milhões
-                de
-                pessoas em todo o mundo. <br>
-                Trata-se de uma condição que ultrapassa os limites da saúde individual, alcançando famílias inteiras e
-                impondo desafios sociais, emocionais e econômicos.
-                Diante desse cenário, torna-se essencial promover o acesso a informações claras e confiáveis, estimular
-                o
-                diagnóstico precoce e reforçar a importância do cuidado humanizado.<br>
-                Este site foi desenvolvido com o propósito de contribuir para essa sensibilização, oferecendo
-                conhecimento
-                que ajude a compreender melhor a doença e a fortalecer a rede de apoio às pessoas com Alzheimer e seus
-                cuidadores.
-            </p>
-        </div>
-        <div class="divimg reveal"> <img class="imgintro"
-                src="./img/alzheimer-day-brain-and-purple-puzzles-free-png 1.png" alt=""></div>
 
-    </section>
-
-    <section id="sobre" class="sobre">
-
-        <h1>Sobre o Alzheimer:</h1>
-
-        <div class="topics">
-
-            <!-- Botões e Modais -->
-
-            <!-- História -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal1">
-                História
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal1Label">História do Alzheimer</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Fechar"></button>
-                        </div>
-
-                        <div class="modal-body">
-
-                            <h2>1. Período Pré-Alzheimer</h2>
-                            <p>
-                                Antes do século XX, havia descrições vagas de declínio mental na velhice.
-                            </p>
-                            <p>
-                                Autores como Cícero e Shakespeare mencionaram sintomas que hoje poderiam ser associados
-                                à demência,
-                                mas sem uma definição médica clara.
-                            </p>
-                            <p>
-                                Essas referências são frequentemente reinterpretadas à luz do conhecimento atual, mas
-                                não caracterizam
-                                um entendimento real da doença na época.
-                            </p>
-
-                            <h2>2. Descoberta por Alois Alzheimer (1906/1907)</h2>
-                            <p>
-                                Alois Alzheimer, o neuropsiquiatra que descobriu a demência que afeta milhões de
-                                pessoas!
-                            </p>
-                            <p>
-                                O estudo de um médico alemão sobre uma mulher com perda de memória e alucinações marca o
-                                início da
-                                pesquisa sobre a doença que ganhou seu nome.
-                            </p>
-                            <p>
-                                Em 3 de novembro de 1906, uma plateia de psiquiatras em Tübingen, Alemanha, foi a
-                                primeira a ouvir a
-                                história de Auguste Deter. Ela havia sido internada no Hospital Psiquiátrico de
-                                Frankfurt cinco anos
-                                antes com perda de memória e outros sintomas cognitivos. Ao examinar seu cérebro, o
-                                médico Alois Alzheimer
-                                descobriu as placas amiloides e os emaranhados neurofibrilares que são características
-                                do que hoje chamamos
-                                de doença de Alzheimer.
-                            </p>
-                            <p>
-                                O neuropsiquiatra manteve um histórico médico detalhado de Deter, encontrado na década
-                                de 1990 pela equipe
-                                de Maurer, que era diretor do mesmo hospital psiquiátrico onde Alzheimer trabalhava. O
-                                psiquiatra havia
-                                escrito à mão todas as suas perguntas e observações sobre a condição da paciente.
-                            </p>
-                            <blockquote>
-                                “Eu mostro a ela um lápis, uma caneta, uma bolsa, algumas chaves, um diário e um cigarro
-                                e ela os identifica
-                                corretamente.”
-                            </blockquote>
-                            <blockquote>
-                                “Quando ela tem que escrever Dona Auguste D. escreve Dona e aí a gente tem que repetir
-                                as outras palavras
-                                porque ela esquece.”
-                            </blockquote>
-                            <blockquote>
-                                “A paciente não consegue progredir na escrita e repete ‘eu me perdi’.”
-                            </blockquote>
-                            <p>
-                                Segundo Maurer, logo após a morte dela, o cérebro da mulher foi minuciosamente analisado
-                                pelo psiquiatra.
-                                O mais relevante que o psiquiatra encontrou foi que o córtex cerebral estava mais
-                                estreito que o normal
-                                (atrófico). Ele também descobriu o acúmulo de placas e neurofilamentos, o que explicava
-                                sua doença.
-                            </p>
-                            <p>
-                                Auguste Deter acabou vivendo mais cinco anos no hospital. No final, estava totalmente
-                                demente.
-                                Ela morreu em 8 de abril de 1906. Auguste Deter foi a primeira paciente com Alzheimer do
-                                mundo!
-                            </p>
-                            <p>
-                                Esse evento marca o nascimento oficial do diagnóstico da doença de Alzheimer.
-                            </p>
-                            <p>
-                                Em 1910, o colega de Alzheimer, o psiquiatra alemão Emil Kraepelin, classificou a doença
-                                como
-                                “doença de Alzheimer” em homenagem a ele, formalizando a distinção entre a demência
-                                senil e a demência pré-senil.
-                            </p>
-
-                            <h2>3. Período de Invisibilidade (aprox. 1910–1960)</h2>
-                            <p>
-                                Após a morte de Alzheimer, a doença ficou praticamente ignorada por décadas.
-                                A medicina focava outras formas de demência, e o nome “Alzheimer” foi pouco utilizado.
-                            </p>
-                            <p>
-                                O distúrbio era socialmente invisível, pois faltava um nome, um modelo clínico
-                                consolidado e
-                                atenção pública ou científica. Segundo o psiquiatra Barry Reisberg, a doença só começou
-                                a “existir”
-                                novamente para a medicina e o público em 1974.
-                            </p>
-
-                            <h2>4. Redescoberta e Visibilidade (anos 1960–1980)</h2>
-                            <p>
-                                O estudo de Newcastle, nos anos 1960, reavivou o interesse científico pela doença.
-                            </p>
-                            <p>
-                                A partir dos anos 1970 e 1980, o Alzheimer começou a ganhar visibilidade pública e
-                                científica,
-                                especialmente com o avanço do chamado “paradigma cognitivo”, que foca nos déficits de
-                                memória e cognição.
-                            </p>
-                            <p>
-                                A descoberta do peptídeo beta-amiloide (1984) e do gene APP (1987) consolidou a base
-                                biológica da doença
-                                e impulsionou a pesquisa.
-                            </p>
-                            <p>
-                                No Brasil, a conscientização só começou nos anos 1990, com a fundação da APAZ
-                                (Associação dos Parentes de
-                                Doentes de Alzheimer) e cobertura na mídia.
-                            </p>
-
-                            <h3>Principais Marcos Científicos Recentes:</h3>
-                            <ul>
-                                <li><strong>1984:</strong> Identificação do beta-amiloide, principal componente das
-                                    placas cerebrais.</li>
-                                <li><strong>1987:</strong> Descoberta do primeiro gene relacionado ao Alzheimer (APP),
-                                    marcando a importância genética em casos familiares da doença.</li>
-                            </ul>
-                            <p>
-                                Daquele momento em diante, as evidências genéticas deram início a pesquisas sobre o
-                                envolvimento das células.
-                            </p>
-
-                            <h2>O futuro da doença de Alzheimer</h2>
-                            <p>
-                                Nos 118 anos de história da doença de Alzheimer, o progresso nunca foi tão rápido.
-                                Avanços no tratamento, na detecção precoce e na prevenção têm o potencial de mudar nossa
-                                perspectiva
-                                sobre essa doença neurodegenerativa.
-                            </p>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Dia da Conscientização -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal2">
-                Dia da Conscientização
-            </button>
-            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal2Label">Dia da Conscientização</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Com a intenção de conscientizar a sociedade sobre a demência, a importância de seu
-                            diagnóstico e tratamento e combater o estigma, a Associação Internacional do Alzheimer
-                            (AID), instituição internacional que busca defender políticas governamentais mais eficazes e
-                            oferecer apoio e serviços a pessoas com demência e seus cuidadores, instituiu o dia 21 de
-                            setembro como o Dia Mundial do Alzheimer. A data representa uma oportunidade para
-                            sensibilizar a população, as entidades públicas e privadas de saúde, bem como os
-                            profissionais da área, para essa doença que acomete mais de 1,2 milhão de brasileiros.
-                            A data foi oficializada no Brasil pela Lei nº 11.736/2008.
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Sintomas -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal5">
-                Sintomas
-            </button>
-            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal5Label">Sintomas</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Texto sobre progressão e confusão com outras doenças -->
-                            <p>
-                                Os sintomas do Alzheimer progridem de forma lenta e ao longo de vários anos, e muitas
-                                vezes podem ser confundidos com outras doenças,
-                                como por exemplo a demência com corpos de Lewy, doença de Parkinson, depressão e outros.
-                            </p>
-                            <p>
-                                Os sintomas da doença de Alzheimer são divididos em fases, considerando que em cada
-                                indivíduo elas podem se manifestar por um período de tempo diferente.
-                                É de extrema importância a observação de cada estágio para analisar a velocidade da
-                                progressão da doença no indivíduo.
-                            </p>
-
-                            <p>Para entender a progressão, veja as fases da doença no próximo bloco.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Fases -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal3">
-                Fases
-            </button>
-            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal3Label">Fases do Alzheimer</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Fechar"></button>
-                        </div>
-
-                        <div class="modal-body">
-
-                            <h2>Primeira fase: Pré-demência</h2>
-                            <p>
-                                Apesar de já haver danos cerebrais, os sintomas se apresentam de forma leve e sutil,
-                                podendo ser confundidos com envelhecimento natural.
-                                Neste estágio ocorrem leves perdas de memória recente, mudanças de atenção e sintomas
-                                depressivos.
-                            </p>
-
-                            <h2>Segunda fase: Estágio inicial ou leve</h2>
-                            <p>
-                                Segundo o Ministério da Saúde, o primeiro sintoma da doença de Alzheimer é a perda de
-                                memória recente, e embora este sintoma se apresente
-                                na fase anterior, neste estágio ele pode se agravar. O indivíduo pode ter dificuldade de
-                                encontrar palavras, tomar decisões e se sentir
-                                confuso em relação ao tempo e ao espaço, porém ainda se encontra autônomo e não
-                                dependente de ajuda.
-                            </p>
-
-                            <h2>Terceira fase: Estágio intermediário</h2>
-                            <p>
-                                Se agravam as capacidades de realizar tarefas comuns e a coordenação motora. As
-                                limitações começam a afetar a rotina do indivíduo,
-                                como em cuidar da casa, higiene pessoal e esquecer o nome de pessoas próximas.
-                            </p>
-                            <p>
-                                Podem surgir também crises de alucinações, distúrbio de sono e repetição frequente das
-                                mesmas perguntas, fazendo com que o indivíduo
-                                possa chegar ao ponto de necessitar de cuidados constantes. É nessa fase que a doença
-                                progride rapidamente e a mudança de comportamento
-                                e personalidade fica cada vez mais evidente, tornando-se perigoso para o indivíduo ficar
-                                sozinho.
-                            </p>
-
-                            <h2>Quarta fase: Estágio avançado</h2>
-                            <p>
-                                Neste estágio a memória já está altamente afetada, com muita dificuldade em se recordar
-                                tanto do passado como do presente, além de
-                                incapacidade de se alimentar sozinho, engolir alimentos e caminhar.
-                            </p>
-                            <p>
-                                O indivíduo já está bem debilitado, o que pode causar complicações que o deixam acamado
-                                ou hospitalizado, aumentando o risco de
-                                desenvolver sérias infecções. Nesse momento, o auxílio de familiares e pessoas próximas
-                                torna-se fundamental para o manejo do paciente
-                                com Alzheimer na fase terminal.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Causas -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal4">
-                Causas
-            </button>
-            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal4Label">Causas</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Fechar"></button>
-                        </div>
-
-                        <div class="modal-body">
-
-                            <h2>Fatores biológicos e neurológicos</h2>
-                            <ul>
-                                <li><strong>Acúmulo de proteínas anormais:</strong>
-                                    <ul>
-                                        <li><strong>Beta-amiloide:</strong> forma placas entre os neurônios,
-                                            prejudicando a comunicação.</li>
-                                        <li><strong>Proteína tau:</strong> forma emaranhados dentro dos neurônios,
-                                            levando à morte celular.</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Degeneração neuronal:</strong> perda progressiva de neurônios, especialmente
-                                    em áreas ligadas à memória e cognição (como o hipocampo).</li>
-                                <li><strong>Inflamação cerebral crônica:</strong> a resposta inflamatória contínua
-                                    acelera os danos aos neurônios.</li>
-                                <li><strong>Déficit de neurotransmissores:</strong> especialmente da acetilcolina,
-                                    essencial para memória e aprendizado.</li>
-                            </ul>
-
-                            <h2>Fatores genéticos</h2>
-                            <ul>
-                                <li><strong>Histórico familiar:</strong> aumenta a predisposição.</li>
-                                <li><strong>Mutação genética (mais rara):</strong> ligada a casos de Alzheimer precoce.
-                                </li>
-                                <li><strong>Gene APOE-e4:</strong> principal fator de risco genético para Alzheimer
-                                    tardio.</li>
-                            </ul>
-
-                            <h2>Fatores ambientais e de estilo de vida</h2>
-                            <ul>
-                                <li><strong>Idade avançada:</strong> principal fator de risco.</li>
-                                <li><strong>Baixa escolaridade / estímulo cognitivo reduzido:</strong> menos reserva
-                                    cognitiva para proteger o cérebro.</li>
-                                <li><strong>Doenças cardiovasculares:</strong> hipertensão, diabetes, colesterol alto e
-                                    obesidade aumentam o risco.</li>
-                                <li><strong>Tabagismo e álcool em excesso.</strong></li>
-                                <li><strong>Sedentarismo e má alimentação.</strong></li>
-                                <li><strong>Traumatismo craniano:</strong> histórico de pancadas na cabeça.</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Diagnóstico -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal6">
-                Diagnóstico
-            </button>
-            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal6Label">Diagnóstico</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <p>
-                                O diagnóstico do Alzheimer é feito por exclusão, descartando outras possíveis causas dos
-                                sintomas, como outras formas de demência.
-                                Para isso, são realizados avaliação clínica, exames de sangue e de imagem para
-                                identificar a deterioração causada pela doença.
-                            </p>
-                            <p>
-                                Exames como tomografia computadorizada (TC), ressonância magnética (RM), PET/CT e
-                                análises de biomarcadores no líquor ou sangue,
-                                como a proteína beta-amiloide, são utilizados para apoiar o diagnóstico.
-                            </p>
-
-                            <h2 style="font-size: 30px;">Etapas e Exames do Diagnóstico</h2>
-
-                            <h3>1. Avaliação Clínica</h3>
-                            <p>
-                                O médico ou profissional de saúde coleta informações sobre os sintomas e o histórico
-                                médico do paciente e da família,
-                                buscando compreender a evolução da doença e identificar fatores de risco.
-                            </p>
-                            <p>
-                                Nessa etapa, são realizados exames neurológicos, que verificam a integridade do sistema
-                                nervoso, além de testes cognitivos
-                                e neuropsicológicos, voltados para avaliar memória, raciocínio, linguagem e demais
-                                funções mentais.
-                            </p>
-
-                            <h3>2. Exames de Sangue</h3>
-                            <p>
-                                Servem para excluir outras condições que possam causar sintomas semelhantes aos do
-                                Alzheimer,
-                                como alterações na tireoide ou deficiência de vitamina B12.
-                            </p>
-
-                            <h3>3. Exames de Imagem</h3>
-                            <ul>
-                                <li><strong>Tomografia Computadorizada (TC) e Ressonância Magnética (RM):</strong>
-                                    possibilitam visualizar o cérebro, detectar atrofia em áreas específicas e descartar
-                                    outras doenças, como tumores ou acidentes vasculares cerebrais (AVCs).</li>
-                                <li><strong>PET/CT:</strong> utiliza substâncias radioativas para identificar depósitos
-                                    da proteína beta-amiloide no cérebro, considerados um marcador típico do Alzheimer.
-                                </li>
-                            </ul>
-
-                            <h3>4. Análise de Biomarcadores (Líquor e Sangue)</h3>
-                            <ul>
-                                <li><strong>Líquor (líquido cefalorraquidiano):</strong> obtido por punção lombar,
-                                    permite detectar biomarcadores como as proteínas beta-amiloide e Tau, que auxiliam
-                                    na confirmação da doença.</li>
-                                <li><strong>Exames de sangue recentes:</strong> vêm mostrando capacidade de identificar
-                                    marcadores específicos do Alzheimer, contribuindo para um diagnóstico mais precoce.
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tratamentos -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal7">
-                Tratamentos
-            </button>
-            <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal7Label">Tratamentos</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <p>
-                                O tratamento do Alzheimer é desafiador, já que é incurável.
-                                O objetivo é retardar a evolução da doença, preservar por mais tempo possível as funções
-                                intelectuais
-                                e proporcionar qualidade de vida para a pessoa.
-                            </p>
-                            <p>
-                                Os melhores resultados são obtidos quando o tratamento é iniciado nas fases mais
-                                precoces.
-                                Para isso, existem estratégias e abordagens que são comumente utilizadas:
-                            </p>
-
-                            <h2>Principais Abordagens</h2>
-                            <ul>
-                                <li><strong>Medicamentos:</strong> estabilizam o comprometimento cognitivo, do
-                                    comportamento e das atividades da vida diária, minimizando efeitos adversos.
-                                    <p>Uma vez iniciado, o tratamento deve ser reavaliado pelo médico após um mês, mas
-                                        mantido por um período mínimo para avaliar eficácia. A administração diária e
-                                        correta das doses é fundamental.</p>
-                                </li>
-                                <li><strong>Terapia da fala:</strong> auxilia nas habilidades de comunicação, mesmo à
-                                    medida que a doença progride.</li>
-                                <li><strong>Apoio psicossocial:</strong> fornece suporte não só ao paciente, mas também
-                                    aos cuidadores, incluindo aconselhamento, educação sobre a doença e participação em
-                                    grupos de apoio.</li>
-                                <li><strong>Estilo de vida saudável:</strong> dieta balanceada, exercícios físicos
-                                    regulares e atividades que estimulem a mente.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Prevenção -->
-            <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
-                data-bs-target="#modal8">
-                Prevenção
-            </button>
-            <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content conteudo">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modal8Label">Prevenção</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <p>
-                                A Doença de Alzheimer ainda não possui uma prevenção específica, porém, acredita-se que
-                                ter bons hábitos,
-                                manter a mente ativa e uma vida social saudável pode retardar ou até inibir a
-                                manifestação da doença.
-                            </p>
-
-                            <h2>Exemplos de hábitos que ajudam na prevenção:</h2>
-                            <ul>
-                                <li>Estudar, ler, pensar e manter a mente sempre ativa;</li>
-                                <li>Fazer exercícios de aritmética e raciocínio lógico;</li>
-                                <li>Jogos inteligentes e quebra-cabeças;</li>
-                                <li>Participar de atividades em grupo e sociais;</li>
-                                <li>Não fumar;</li>
-                                <li>Não consumir bebidas alcoólicas em excesso;</li>
-                                <li>Ter uma alimentação saudável e regrada;</li>
-                                <li>Praticar atividades físicas regularmente.</li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="jogos reveal" id="jogos">
-        <div class="desc">
-            <h1>Jogos e Atividades para o Cérebro: Uma Ferramenta de Cuidado</h1>
-            <p class="descjogos">
-                A prática regular de atividades lúdicas e jogos pode ser uma poderosa ferramenta para estimular a mente,
-                melhorar a qualidade de vida e o bem-estar de pessoas com Alzheimer e outras demências. O importante é
-                escolher atividades que se adaptem ao nível de capacidade e que promovam a interação social.</p>
-            <div class="reveal"></div>
-        </div>
-        <h2>Jogos Online e Aplicativos</h2>
-        <div class="digitais">
-            <div class="card jogo">
-                <img src="./img/Cognitive function.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Lumosity</h5>
-                    <p class="card-text">Desafios diários para aprimorar o cérebro.</p>
-                    <a href="https://www.lumosity.com/pt/" class="btn btn-primary btn">Acessar</a>
-                </div>
-            </div>
-            <div class="card jogo">
-                <img src="./img/image 2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">CogniFit</h5>
-                    <p class="card-text">Exercícios cognitivos personalizados.</p>
-                    <a href="https://www.cognifit.com/br?srsltid=AfmBOor_LDeMmV4Ag07Yd0Zi7Cdwr6UjvlwP-IXI3T9IR9ZJriIjDJiD"
-                        class="btn btn-primary btn">Acessar</a>
-                </div>
-            </div>
-            <div class="card jogo">
-                <img src="./img/image 3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Peak</h5>
-                    <p class="card-text"> Treino cerebral desafiador.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.brainbow.peak.app&hl=pt_BR"
-                        class="btn btn-primary btn">Acessar</a>
-                </div>
-            </div>
-            <div class="card jogo">
-                <img src="./img/download.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Memory Life</h5>
-                    <p class="card-text">Exercícios para treinar memória.
-                    </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.br.ailsonfreire&hl=pt_BR"
-                        class="btn btn-primary btn">Acessar</a>
-                </div>
-            </div>
-            <div class="card jogo">
-                <img src="./img/image 5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">NeuroNation</h5>
-                    <p class="card-text"> Treino cerebral com base em ciência.</p>
-                    <a href="https://play.google.com/store/apps/details?id=air.nn.mobile.app.main&hl=pt_BRr"
-                        class="btn btn-primary btn">Acessar</a>
-                </div>
-            </div>
-        </div>
-        <div class="atividades reveal">
-            <div>
-                <h2>Jogos de Estratégia e Raciocínio</h2>
-                <h3> Xadrez e Damas:</h3>
-                <p>
-                    Esses jogos de tabuleiro exigem foco e planejamento. O xadrez estimula o raciocínio lógico e o
-                    pensamento a longo prazo, enquanto as damas treinam o raciocínio rápido e a tomada de decisões.
-                </p>
-                <h3>Baralho:</h3>
-                <p>Jogos de cartas como Paciência e Memória são excelentes para exercitar a coordenação motora e a
-                    memória de curto prazo de uma forma divertida e desafiadora.
+    <main>
+        <section id="intro" class="intro ">
+            <div class="divtexto reveal">
+                <h1>Você realmente sabe o que é Alzheimer?</h1>
+                <p>O Dia Mundial do Alzheimer, celebrado em 21 de setembro, representa um momento de reflexão e
+                    conscientização
+                    sobre uma doença que afeta não apenas a memória, mas também a autonomia e a qualidade de vida de
+                    milhões
+                    de
+                    pessoas em todo o mundo. <br>
+                    Trata-se de uma condição que ultrapassa os limites da saúde individual, alcançando famílias inteiras
+                    e
+                    impondo desafios sociais, emocionais e econômicos.
+                    Diante desse cenário, torna-se essencial promover o acesso a informações claras e confiáveis,
+                    estimular
+                    o
+                    diagnóstico precoce e reforçar a importância do cuidado humanizado.<br>
+                    Este site foi desenvolvido com o propósito de contribuir para essa sensibilização, oferecendo
+                    conhecimento
+                    que ajude a compreender melhor a doença e a fortalecer a rede de apoio às pessoas com Alzheimer e
+                    seus
+                    cuidadores.
                 </p>
             </div>
+            <div class="divimg reveal"> <img class="imgintro"
+                    src="./img/alzheimer-day-brain-and-purple-puzzles-free-png 1.png" alt=""></div>
 
-            <div class="imagens">
-                <img class="img2 reveal" src="./img/Rectangle 375.png" alt="">
-                <img class="img1 reveal" src="./img/Rectangle 374.png" alt="">
-            </div>
-        </div>
+        </section>
 
-        <div class="atividades reveal">
-            <div>
-                <h2>Jogos de Associação e Socialização</h2>
-                <h3>Dominó:</h3>
-                <p class="domino">
-                    Este jogo de mesa é ótimo para a interação social. Ele estimula a atenção e a capacidade de
-                    reconhecimento de padrões e números, ao mesmo tempo que promove momentos de diversão.</p>
-            </div>
-            <div class="imagem reveal"><img class="img3" src="./img/video_preview_0000.avif" alt="" srcset="">
-            </div>
-        </div>
-        <div class="terapeuticas  reveal">
-            <div class="imgs">
-                <div class="imgns">
+        <section id="sobre" class="sobre">
 
-                    <img class="img2 reveal" src="./img/fique-ou-passe.webp" alt="">
-                    <img class="img1 reveal" src="./img/download.jpg" alt="">
+            <h1>Sobre o Alzheimer:</h1>
+
+            <div class="topics">
+
+                <!-- Botões e Modais -->
+
+                <!-- História -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal1">
+                    História
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label">
+                    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal1Label">História do Alzheimer</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Fechar"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <h2>1. Período Pré-Alzheimer</h2>
+                                <p>
+                                    Antes do século XX, havia descrições vagas de declínio mental na velhice.
+                                </p>
+                                <p>
+                                    Autores como Cícero e Shakespeare mencionaram sintomas que hoje poderiam ser
+                                    associados
+                                    à demência,
+                                    mas sem uma definição médica clara.
+                                </p>
+                                <p>
+                                    Essas referências são frequentemente reinterpretadas à luz do conhecimento atual,
+                                    mas
+                                    não caracterizam
+                                    um entendimento real da doença na época.
+                                </p>
+
+                                <h2>2. Descoberta por Alois Alzheimer (1906/1907)</h2>
+                                <p>
+                                    Alois Alzheimer, o neuropsiquiatra que descobriu a demência que afeta milhões de
+                                    pessoas!
+                                </p>
+                                <p>
+                                    O estudo de um médico alemão sobre uma mulher com perda de memória e alucinações
+                                    marca o
+                                    início da
+                                    pesquisa sobre a doença que ganhou seu nome.
+                                </p>
+                                <p>
+                                    Em 3 de novembro de 1906, uma plateia de psiquiatras em Tübingen, Alemanha, foi a
+                                    primeira a ouvir a
+                                    história de Auguste Deter. Ela havia sido internada no Hospital Psiquiátrico de
+                                    Frankfurt cinco anos
+                                    antes com perda de memória e outros sintomas cognitivos. Ao examinar seu cérebro, o
+                                    médico Alois Alzheimer
+                                    descobriu as placas amiloides e os emaranhados neurofibrilares que são
+                                    características
+                                    do que hoje chamamos
+                                    de doença de Alzheimer.
+                                </p>
+                                <p>
+                                    O neuropsiquiatra manteve um histórico médico detalhado de Deter, encontrado na
+                                    década
+                                    de 1990 pela equipe
+                                    de Maurer, que era diretor do mesmo hospital psiquiátrico onde Alzheimer trabalhava.
+                                    O
+                                    psiquiatra havia
+                                    escrito à mão todas as suas perguntas e observações sobre a condição da paciente.
+                                </p>
+                                <blockquote>
+                                    “Eu mostro a ela um lápis, uma caneta, uma bolsa, algumas chaves, um diário e um
+                                    cigarro
+                                    e ela os identifica
+                                    corretamente.”
+                                </blockquote>
+                                <blockquote>
+                                    “Quando ela tem que escrever Dona Auguste D. escreve Dona e aí a gente tem que
+                                    repetir
+                                    as outras palavras
+                                    porque ela esquece.”
+                                </blockquote>
+                                <blockquote>
+                                    “A paciente não consegue progredir na escrita e repete ‘eu me perdi’.”
+                                </blockquote>
+                                <p>
+                                    Segundo Maurer, logo após a morte dela, o cérebro da mulher foi minuciosamente
+                                    analisado
+                                    pelo psiquiatra.
+                                    O mais relevante que o psiquiatra encontrou foi que o córtex cerebral estava mais
+                                    estreito que o normal
+                                    (atrófico). Ele também descobriu o acúmulo de placas e neurofilamentos, o que
+                                    explicava
+                                    sua doença.
+                                </p>
+                                <p>
+                                    Auguste Deter acabou vivendo mais cinco anos no hospital. No final, estava
+                                    totalmente
+                                    demente.
+                                    Ela morreu em 8 de abril de 1906. Auguste Deter foi a primeira paciente com
+                                    Alzheimer do
+                                    mundo!
+                                </p>
+                                <p>
+                                    Esse evento marca o nascimento oficial do diagnóstico da doença de Alzheimer.
+                                </p>
+                                <p>
+                                    Em 1910, o colega de Alzheimer, o psiquiatra alemão Emil Kraepelin, classificou a
+                                    doença
+                                    como
+                                    “doença de Alzheimer” em homenagem a ele, formalizando a distinção entre a demência
+                                    senil e a demência pré-senil.
+                                </p>
+
+                                <h2>3. Período de Invisibilidade (aprox. 1910–1960)</h2>
+                                <p>
+                                    Após a morte de Alzheimer, a doença ficou praticamente ignorada por décadas.
+                                    A medicina focava outras formas de demência, e o nome “Alzheimer” foi pouco
+                                    utilizado.
+                                </p>
+                                <p>
+                                    O distúrbio era socialmente invisível, pois faltava um nome, um modelo clínico
+                                    consolidado e
+                                    atenção pública ou científica. Segundo o psiquiatra Barry Reisberg, a doença só
+                                    começou
+                                    a “existir”
+                                    novamente para a medicina e o público em 1974.
+                                </p>
+
+                                <h2>4. Redescoberta e Visibilidade (anos 1960–1980)</h2>
+                                <p>
+                                    O estudo de Newcastle, nos anos 1960, reavivou o interesse científico pela doença.
+                                </p>
+                                <p>
+                                    A partir dos anos 1970 e 1980, o Alzheimer começou a ganhar visibilidade pública e
+                                    científica,
+                                    especialmente com o avanço do chamado “paradigma cognitivo”, que foca nos déficits
+                                    de
+                                    memória e cognição.
+                                </p>
+                                <p>
+                                    A descoberta do peptídeo beta-amiloide (1984) e do gene APP (1987) consolidou a base
+                                    biológica da doença
+                                    e impulsionou a pesquisa.
+                                </p>
+                                <p>
+                                    No Brasil, a conscientização só começou nos anos 1990, com a fundação da APAZ
+                                    (Associação dos Parentes de
+                                    Doentes de Alzheimer) e cobertura na mídia.
+                                </p>
+
+                                <h3>Principais Marcos Científicos Recentes:</h3>
+                                <ul>
+                                    <li><strong>1984:</strong> Identificação do beta-amiloide, principal componente das
+                                        placas cerebrais.</li>
+                                    <li><strong>1987:</strong> Descoberta do primeiro gene relacionado ao Alzheimer
+                                        (APP),
+                                        marcando a importância genética em casos familiares da doença.</li>
+                                </ul>
+                                <p>
+                                    Daquele momento em diante, as evidências genéticas deram início a pesquisas sobre o
+                                    envolvimento das células.
+                                </p>
+
+                                <h2>O futuro da doença de Alzheimer</h2>
+                                <p>
+                                    Nos 118 anos de história da doença de Alzheimer, o progresso nunca foi tão rápido.
+                                    Avanços no tratamento, na detecção precoce e na prevenção têm o potencial de mudar
+                                    nossa
+                                    perspectiva
+                                    sobre essa doença neurodegenerativa.
+                                </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
-                <img class="img3 reveal" src="./img/dcdb6a89b04e84e6a0c51887c2327561.webp" alt="">
-            </div>
 
-            <div class="ativ reveal">
+
+                <!-- Dia da Conscientização -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal2">
+                    Dia da Conscientização
+                </button>
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal2Label">Dia da Conscientização</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Com a intenção de conscientizar a sociedade sobre a demência, a importância de seu
+                                diagnóstico e tratamento e combater o estigma, a Associação Internacional do Alzheimer
+                                (AID), instituição internacional que busca defender políticas governamentais mais
+                                eficazes e
+                                oferecer apoio e serviços a pessoas com demência e seus cuidadores, instituiu o dia 21
+                                de
+                                setembro como o Dia Mundial do Alzheimer. A data representa uma oportunidade para
+                                sensibilizar a população, as entidades públicas e privadas de saúde, bem como os
+                                profissionais da área, para essa doença que acomete mais de 1,2 milhão de brasileiros.
+                                A data foi oficializada no Brasil pela Lei nº 11.736/2008.
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sintomas -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal5">
+                    Sintomas
+                </button>
+                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal5Label">Sintomas</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Texto sobre progressão e confusão com outras doenças -->
+                                <p>
+                                    Os sintomas do Alzheimer progridem de forma lenta e ao longo de vários anos, e
+                                    muitas
+                                    vezes podem ser confundidos com outras doenças,
+                                    como por exemplo a demência com corpos de Lewy, doença de Parkinson, depressão e
+                                    outros.
+                                </p>
+                                <p>
+                                    Os sintomas da doença de Alzheimer são divididos em fases, considerando que em cada
+                                    indivíduo elas podem se manifestar por um período de tempo diferente.
+                                    É de extrema importância a observação de cada estágio para analisar a velocidade da
+                                    progressão da doença no indivíduo.
+                                </p>
+
+                                <p>Para entender a progressão, veja as fases da doença no próximo bloco.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Fases -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal3">
+                    Fases
+                </button>
+                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal3Label">Fases do Alzheimer</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Fechar"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <h2>Primeira fase: Pré-demência</h2>
+                                <p>
+                                    Apesar de já haver danos cerebrais, os sintomas se apresentam de forma leve e sutil,
+                                    podendo ser confundidos com envelhecimento natural.
+                                    Neste estágio ocorrem leves perdas de memória recente, mudanças de atenção e
+                                    sintomas
+                                    depressivos.
+                                </p>
+
+                                <h2>Segunda fase: Estágio inicial ou leve</h2>
+                                <p>
+                                    Segundo o Ministério da Saúde, o primeiro sintoma da doença de Alzheimer é a perda
+                                    de
+                                    memória recente, e embora este sintoma se apresente
+                                    na fase anterior, neste estágio ele pode se agravar. O indivíduo pode ter
+                                    dificuldade de
+                                    encontrar palavras, tomar decisões e se sentir
+                                    confuso em relação ao tempo e ao espaço, porém ainda se encontra autônomo e não
+                                    dependente de ajuda.
+                                </p>
+
+                                <h2>Terceira fase: Estágio intermediário</h2>
+                                <p>
+                                    Se agravam as capacidades de realizar tarefas comuns e a coordenação motora. As
+                                    limitações começam a afetar a rotina do indivíduo,
+                                    como em cuidar da casa, higiene pessoal e esquecer o nome de pessoas próximas.
+                                </p>
+                                <p>
+                                    Podem surgir também crises de alucinações, distúrbio de sono e repetição frequente
+                                    das
+                                    mesmas perguntas, fazendo com que o indivíduo
+                                    possa chegar ao ponto de necessitar de cuidados constantes. É nessa fase que a
+                                    doença
+                                    progride rapidamente e a mudança de comportamento
+                                    e personalidade fica cada vez mais evidente, tornando-se perigoso para o indivíduo
+                                    ficar
+                                    sozinho.
+                                </p>
+
+                                <h2>Quarta fase: Estágio avançado</h2>
+                                <p>
+                                    Neste estágio a memória já está altamente afetada, com muita dificuldade em se
+                                    recordar
+                                    tanto do passado como do presente, além de
+                                    incapacidade de se alimentar sozinho, engolir alimentos e caminhar.
+                                </p>
+                                <p>
+                                    O indivíduo já está bem debilitado, o que pode causar complicações que o deixam
+                                    acamado
+                                    ou hospitalizado, aumentando o risco de
+                                    desenvolver sérias infecções. Nesse momento, o auxílio de familiares e pessoas
+                                    próximas
+                                    torna-se fundamental para o manejo do paciente
+                                    com Alzheimer na fase terminal.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Causas -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal4">
+                    Causas
+                </button>
+                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal4Label">Causas</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Fechar"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <h2>Fatores biológicos e neurológicos</h2>
+                                <ul>
+                                    <li><strong>Acúmulo de proteínas anormais:</strong>
+                                        <ul>
+                                            <li><strong>Beta-amiloide:</strong> forma placas entre os neurônios,
+                                                prejudicando a comunicação.</li>
+                                            <li><strong>Proteína tau:</strong> forma emaranhados dentro dos neurônios,
+                                                levando à morte celular.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Degeneração neuronal:</strong> perda progressiva de neurônios,
+                                        especialmente
+                                        em áreas ligadas à memória e cognição (como o hipocampo).</li>
+                                    <li><strong>Inflamação cerebral crônica:</strong> a resposta inflamatória contínua
+                                        acelera os danos aos neurônios.</li>
+                                    <li><strong>Déficit de neurotransmissores:</strong> especialmente da acetilcolina,
+                                        essencial para memória e aprendizado.</li>
+                                </ul>
+
+                                <h2>Fatores genéticos</h2>
+                                <ul>
+                                    <li><strong>Histórico familiar:</strong> aumenta a predisposição.</li>
+                                    <li><strong>Mutação genética (mais rara):</strong> ligada a casos de Alzheimer
+                                        precoce.
+                                    </li>
+                                    <li><strong>Gene APOE-e4:</strong> principal fator de risco genético para Alzheimer
+                                        tardio.</li>
+                                </ul>
+
+                                <h2>Fatores ambientais e de estilo de vida</h2>
+                                <ul>
+                                    <li><strong>Idade avançada:</strong> principal fator de risco.</li>
+                                    <li><strong>Baixa escolaridade / estímulo cognitivo reduzido:</strong> menos reserva
+                                        cognitiva para proteger o cérebro.</li>
+                                    <li><strong>Doenças cardiovasculares:</strong> hipertensão, diabetes, colesterol
+                                        alto e
+                                        obesidade aumentam o risco.</li>
+                                    <li><strong>Tabagismo e álcool em excesso.</strong></li>
+                                    <li><strong>Sedentarismo e má alimentação.</strong></li>
+                                    <li><strong>Traumatismo craniano:</strong> histórico de pancadas na cabeça.</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Diagnóstico -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal6">
+                    Diagnóstico
+                </button>
+                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal6Label">Diagnóstico</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>
+                                    O diagnóstico do Alzheimer é feito por exclusão, descartando outras possíveis causas
+                                    dos
+                                    sintomas, como outras formas de demência.
+                                    Para isso, são realizados avaliação clínica, exames de sangue e de imagem para
+                                    identificar a deterioração causada pela doença.
+                                </p>
+                                <p>
+                                    Exames como tomografia computadorizada (TC), ressonância magnética (RM), PET/CT e
+                                    análises de biomarcadores no líquor ou sangue,
+                                    como a proteína beta-amiloide, são utilizados para apoiar o diagnóstico.
+                                </p>
+
+                                <h2 style="font-size: 30px;">Etapas e Exames do Diagnóstico</h2>
+
+                                <h3>1. Avaliação Clínica</h3>
+                                <p>
+                                    O médico ou profissional de saúde coleta informações sobre os sintomas e o histórico
+                                    médico do paciente e da família,
+                                    buscando compreender a evolução da doença e identificar fatores de risco.
+                                </p>
+                                <p>
+                                    Nessa etapa, são realizados exames neurológicos, que verificam a integridade do
+                                    sistema
+                                    nervoso, além de testes cognitivos
+                                    e neuropsicológicos, voltados para avaliar memória, raciocínio, linguagem e demais
+                                    funções mentais.
+                                </p>
+
+                                <h3>2. Exames de Sangue</h3>
+                                <p>
+                                    Servem para excluir outras condições que possam causar sintomas semelhantes aos do
+                                    Alzheimer,
+                                    como alterações na tireoide ou deficiência de vitamina B12.
+                                </p>
+
+                                <h3>3. Exames de Imagem</h3>
+                                <ul>
+                                    <li><strong>Tomografia Computadorizada (TC) e Ressonância Magnética (RM):</strong>
+                                        possibilitam visualizar o cérebro, detectar atrofia em áreas específicas e
+                                        descartar
+                                        outras doenças, como tumores ou acidentes vasculares cerebrais (AVCs).</li>
+                                    <li><strong>PET/CT:</strong> utiliza substâncias radioativas para identificar
+                                        depósitos
+                                        da proteína beta-amiloide no cérebro, considerados um marcador típico do
+                                        Alzheimer.
+                                    </li>
+                                </ul>
+
+                                <h3>4. Análise de Biomarcadores (Líquor e Sangue)</h3>
+                                <ul>
+                                    <li><strong>Líquor (líquido cefalorraquidiano):</strong> obtido por punção lombar,
+                                        permite detectar biomarcadores como as proteínas beta-amiloide e Tau, que
+                                        auxiliam
+                                        na confirmação da doença.</li>
+                                    <li><strong>Exames de sangue recentes:</strong> vêm mostrando capacidade de
+                                        identificar
+                                        marcadores específicos do Alzheimer, contribuindo para um diagnóstico mais
+                                        precoce.
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tratamentos -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal7">
+                    Tratamentos
+                </button>
+                <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal7Label">Tratamentos</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>
+                                    O tratamento do Alzheimer é desafiador, já que é incurável.
+                                    O objetivo é retardar a evolução da doença, preservar por mais tempo possível as
+                                    funções
+                                    intelectuais
+                                    e proporcionar qualidade de vida para a pessoa.
+                                </p>
+                                <p>
+                                    Os melhores resultados são obtidos quando o tratamento é iniciado nas fases mais
+                                    precoces.
+                                    Para isso, existem estratégias e abordagens que são comumente utilizadas:
+                                </p>
+
+                                <h2>Principais Abordagens</h2>
+                                <ul>
+                                    <li><strong>Medicamentos:</strong> estabilizam o comprometimento cognitivo, do
+                                        comportamento e das atividades da vida diária, minimizando efeitos adversos.
+                                        <p>Uma vez iniciado, o tratamento deve ser reavaliado pelo médico após um mês,
+                                            mas
+                                            mantido por um período mínimo para avaliar eficácia. A administração diária
+                                            e
+                                            correta das doses é fundamental.</p>
+                                    </li>
+                                    <li><strong>Terapia da fala:</strong> auxilia nas habilidades de comunicação, mesmo
+                                        à
+                                        medida que a doença progride.</li>
+                                    <li><strong>Apoio psicossocial:</strong> fornece suporte não só ao paciente, mas
+                                        também
+                                        aos cuidadores, incluindo aconselhamento, educação sobre a doença e participação
+                                        em
+                                        grupos de apoio.</li>
+                                    <li><strong>Estilo de vida saudável:</strong> dieta balanceada, exercícios físicos
+                                        regulares e atividades que estimulem a mente.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prevenção -->
+                <button type="button" class="btn btn-primary topic-btn reveal" data-bs-toggle="modal"
+                    data-bs-target="#modal8">
+                    Prevenção
+                </button>
+                <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content conteudo">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modal8Label">Prevenção</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>
+                                    A Doença de Alzheimer ainda não possui uma prevenção específica, porém, acredita-se
+                                    que
+                                    ter bons hábitos,
+                                    manter a mente ativa e uma vida social saudável pode retardar ou até inibir a
+                                    manifestação da doença.
+                                </p>
+
+                                <h2>Exemplos de hábitos que ajudam na prevenção:</h2>
+                                <ul>
+                                    <li>Estudar, ler, pensar e manter a mente sempre ativa;</li>
+                                    <li>Fazer exercícios de aritmética e raciocínio lógico;</li>
+                                    <li>Jogos inteligentes e quebra-cabeças;</li>
+                                    <li>Participar de atividades em grupo e sociais;</li>
+                                    <li>Não fumar;</li>
+                                    <li>Não consumir bebidas alcoólicas em excesso;</li>
+                                    <li>Ter uma alimentação saudável e regrada;</li>
+                                    <li>Praticar atividades físicas regularmente.</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="jogos reveal" id="jogos">
+            <div class="desc">
+                <h1>Jogos e Atividades para o Cérebro: Uma Ferramenta de Cuidado</h1>
+                <p class="descjogos">
+                    A prática regular de atividades lúdicas e jogos pode ser uma poderosa ferramenta para estimular a
+                    mente,
+                    melhorar a qualidade de vida e o bem-estar de pessoas com Alzheimer e outras demências. O importante
+                    é
+                    escolher atividades que se adaptem ao nível de capacidade e que promovam a interação social.</p>
+                <div class="reveal"></div>
+            </div>
+            <h2>Jogos Online e Aplicativos</h2>
+            <div class="digitais">
+                <div class="card jogo">
+                    <img src="./img/Cognitive function.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumosity</h5>
+                        <p class="card-text">Desafios diários para aprimorar o cérebro.</p>
+                        <a href="https://www.lumosity.com/pt/" class="btn btn-primary btn">Acessar</a>
+                    </div>
+                </div>
+                <div class="card jogo">
+                    <img src="./img/image 2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CogniFit</h5>
+                        <p class="card-text">Exercícios cognitivos personalizados.</p>
+                        <a href="https://www.cognifit.com/br?srsltid=AfmBOor_LDeMmV4Ag07Yd0Zi7Cdwr6UjvlwP-IXI3T9IR9ZJriIjDJiD"
+                            class="btn btn-primary btn">Acessar</a>
+                    </div>
+                </div>
+                <div class="card jogo">
+                    <img src="./img/image 3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Peak</h5>
+                        <p class="card-text"> Treino cerebral desafiador.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.brainbow.peak.app&hl=pt_BR"
+                            class="btn btn-primary btn">Acessar</a>
+                    </div>
+                </div>
+                <div class="card jogo">
+                    <img src="./img/download.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Memory Life</h5>
+                        <p class="card-text">Exercícios para treinar memória.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.br.ailsonfreire&hl=pt_BR"
+                            class="btn btn-primary btn">Acessar</a>
+                    </div>
+                </div>
+                <div class="card jogo">
+                    <img src="./img/image 5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">NeuroNation</h5>
+                        <p class="card-text"> Treino cerebral com base em ciência.</p>
+                        <a href="https://play.google.com/store/apps/details?id=air.nn.mobile.app.main&hl=pt_BRr"
+                            class="btn btn-primary btn">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="atividades reveal">
                 <div>
-                    <h2>Jogos Terapêuticos</h2>
-                    <div class="texto">
-                        <p>
-                            Estes jogos são projetados com objetivos específicos, como estimular a memória e a
-                            linguagem, de
-                            forma mais estruturada.
-                        </p>
-                        <p> Jogos de Associação e Memória: Jogos como o "Escolha seu prato" trabalham a memória visual e
-                            a
-                            associação de conceitos.
-                        </p>
-                        <p> Jogos de Linguagem e Raciocínio: O jogo "Fique ou Passe" foi criado para despertar conversas
-                            e
-                            interações, enquanto o "Decifre o Código" trabalha a resolução de enigmas e o raciocínio
-                            lógico.
-                        </p>
+                    <h2>Jogos de Estratégia e Raciocínio</h2>
+                    <h3> Xadrez e Damas:</h3>
+                    <p>
+                        Esses jogos de tabuleiro exigem foco e planejamento. O xadrez estimula o raciocínio lógico e o
+                        pensamento a longo prazo, enquanto as damas treinam o raciocínio rápido e a tomada de decisões.
+                    </p>
+                    <h3>Baralho:</h3>
+                    <p>Jogos de cartas como Paciência e Memória são excelentes para exercitar a coordenação motora e a
+                        memória de curto prazo de uma forma divertida e desafiadora.
+                    </p>
+                </div>
+
+                <div class="imagens">
+                    <img class="img2 reveal" src="./img/Rectangle 375.png" alt="">
+                    <img class="img1 reveal" src="./img/Rectangle 374.png" alt="">
+                </div>
+            </div>
+
+            <div class="atividades reveal">
+                <div>
+                    <h2>Jogos de Associação e Socialização</h2>
+                    <h3>Dominó:</h3>
+                    <p class="domino">
+                        Este jogo de mesa é ótimo para a interação social. Ele estimula a atenção e a capacidade de
+                        reconhecimento de padrões e números, ao mesmo tempo que promove momentos de diversão.</p>
+                </div>
+                <div class="imagem reveal"><img class="img3" src="./img/video_preview_0000.avif" alt="" srcset="">
+                </div>
+            </div>
+            <div class="terapeuticas  reveal">
+                <div class="imgs">
+                    <div class="imgns">
+
+                        <img class="img2 reveal" src="./img/fique-ou-passe.webp" alt="">
+                        <img class="img1 reveal" src="./img/download.jpg" alt="">
+                    </div>
+                    <img class="img3 reveal" src="./img/dcdb6a89b04e84e6a0c51887c2327561.webp" alt="">
+                </div>
+
+                <div class="ativ reveal">
+                    <div>
+                        <h2>Jogos Terapêuticos</h2>
+                        <div class="texto">
+                            <p>
+                                Estes jogos são projetados com objetivos específicos, como estimular a memória e a
+                                linguagem, de
+                                forma mais estruturada.
+                            </p>
+                            <p> Jogos de Associação e Memória: Jogos como o "Escolha seu prato" trabalham a memória
+                                visual e
+                                a
+                                associação de conceitos.
+                            </p>
+                            <p> Jogos de Linguagem e Raciocínio: O jogo "Fique ou Passe" foi criado para despertar
+                                conversas
+                                e
+                                interações, enquanto o "Decifre o Código" trabalha a resolução de enigmas e o raciocínio
+                                lógico.
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
+            <div class="atividades reveal">
+                <div>
+                    <h2>Atividades Criativas e de Bem-Estar</h2>
+                    <h3> Música e Karaokê: </h3>
+                    <p>
+                        Ouvir canções e cantar em karaokê são atividades que tocam a memória afetiva e geram emoções
+                        positivas. Essa prática simples ajuda a melhorar o humor e o bem-estar geral.
+                    </p>
+                    <h3>Atividades de Arte:</h3>
+                    <p>A pintura, a massinha e a colagem são ótimas para a coordenação motora e a criatividade. Elas
+                        servem como uma forma de expressão e relaxamento, ajudando a pessoa a se concentrar e a diminuir
+                        a ansiedade.
+                    </p>
+                </div>
+
+                <div class="imagens">
+                    <img class="img1 reveal" src="./img/20171127_160726.jpg" alt="">
+                    <img class="img2 reveal" src="./img/idosos-de-alto-angulo-com-fones-de-ouvido_23-2149893860.jpg"
+                        alt="">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="bibliografia" class="bibliografia">
+            <h1>Bibliografia</h1>
+            <div class="refs">
+                <p>
+                    Alzheimer: eu não esqueço” é tema do Dia Mundial da Doença de Alzheimer 2018 | Biblioteca Virtual em
+                    Saúde MS. Ministério da Saúde. Biblioteca Virtual em Saúde – MS. Disponível em:
+                    <a href="https://share.google/kPBkTb8kYccojQk0n" target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+
+                <p>
+                    The history of Alzheimer’s disease. Nature Reviews Neurology; Lisa Kiani; Richard Hodson. Nature. 26
+                    set. 2024. Disponível em:
+                    <a href="https://www.nature.com/immersive/alzheimers-disease-history/index.html"
+                        target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+
+                <p>
+                    HISTALZ2. [s.l.]: [s.n.], s.d. Disponível em:
+                    <a href="https://www.academia.edu/download/36693892/HISTALZ2.pdf" target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+
+                <p>
+                    Alzheimer – artigo da BBC Português. BBC. [s.d.]. Disponível em:
+                    <a href="https://www.bbc.com/portuguese/articles/cn0j2mlvv0yo" target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+
+                <p>
+                    Glossário de Saúde: Alzheimer. Einstein. [s.d.]. Disponível em:
+                    <a href="https://www.einstein.br/n/glossario-de-saude/alzheimer" target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+
+                <p>
+                    Alzheimer. Governo Federal ‒ Ministério da Saúde. Saúde A-Z: Alzheimer. [s.d.]. Disponível em:
+                    <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/alzheimer"
+                        target="_blank">link</a>.
+                    Acesso em: 19 set. 2025.
+                </p>
+            </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="./img/purple-ribbon 1.png" alt="Logo Conectando Memórias">
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.instagram.com/concetandomemorias" target="_blank">
+                    <i class="fab fa-instagram"></i> @conectandomemorias
+                </a>
+                <a href="https://www.instagram.com/mbm._digital" target="_blank">
+                    <i class="fab fa-instagram"></i> @mbm._digital
+                </a>
+            </div>
         </div>
 
-    </section>
-
+        <div class="footer-bottom">
+            <p class="footer-dev">Desenvolvido por <strong>MadeByMe | Digital</strong></p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
